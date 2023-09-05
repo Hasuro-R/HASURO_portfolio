@@ -1,0 +1,77 @@
+@mixin account-box($color, $hover) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem;
+    border-radius: 0.8rem;
+    font-size: 1.3rem;
+    border: 1px solid $color;
+    color: $color;
+    cursor: pointer;
+    &:hover {
+        background-color: $hover;
+    }
+    @media screen and (min-width: 500px) {
+        font-size: 1.5rem;
+        border-width: 2px;
+    }
+}
+
+//MainIcon
+
+.main-icon-box {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.main-icon {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 100vh;
+    box-shadow: 0 0 2px var(--primary-orange), 0 0 4px var(--primary-orange), 0 0 6px var(--primary-orange), 0 0 8px var(--primary-orange), 0 0 10px var(--primary-pink);
+}
+
+.main-icon-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.main-icon-cover-cushion {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100vh;
+    font-size: 1.5rem;
+    color: var(--background-color);
+    background-color: var(--text-color-hover6);
+}
+
+//AccountBoxes
+
+.account-box-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.6rem;
+}
+
+.twitter-box {
+    @include account-box(rgb(0, 133, 171), rgba(0, 133, 171, 0.2));
+}
+
+.github-box {
+    @include account-box(var(--text-color), var(--text-color-hover2));
+}

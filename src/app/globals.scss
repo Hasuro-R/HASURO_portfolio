@@ -1,0 +1,83 @@
+:root {
+  --primary-pink: rgb(234, 94, 127);
+  --primary-yellow: rgb(255, 226, 70);
+  --primary-orange: rgb(240, 134, 75);
+
+  --primary-pink-hover: rgba(234, 94, 127, 0.2);
+  --primary-yellow-hover: rgba(255, 226, 70, 0.2);
+  --primary-orange-hover: rgba(240, 134, 75, 0.2);
+}
+
+:root[data-theme='light'] {
+  --text-color: rgb(64, 72, 85);
+  --background-color: rgb(255, 255, 255);
+
+  --text-color-hover6: rgba(64, 72, 85, 0.6);
+  --text-color-hover2: rgba(64, 72, 85, 0.2);
+}
+
+:root[data-theme='dark'] {
+  --text-color: rgb(255, 255, 255);
+  --background-color: rgb(64, 72, 85);
+
+  --text-color-hover6: rgba(255, 255, 255, 0.6);
+  --text-color-hover2: rgba(255, 255, 255, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1401px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link {
+  width: 100%;
+}
+
+.all-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5rem;
+  padding: 0 1.2rem;
+  @media screen and (min-width: 800px) {
+    width: 800px;
+  }
+}

@@ -1,0 +1,23 @@
+.more-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.15rem;
+    border-radius: 100vh;
+    background: linear-gradient(135deg, rgba(234,94,127,1) 0%, rgba(255,226,70,1) 50%, rgba(240,134,75,1) 100%);
+    cursor: pointer;
+}
+
+.more-button-top {
+    width: 100%;
+    height: 100%;
+    border-radius: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--background-color);
+}
