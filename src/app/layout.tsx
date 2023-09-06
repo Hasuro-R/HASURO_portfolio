@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: `%s - ${siteName}`,
   },
   description,
-  keywords: 'AniSphere, アニスフィア, アニメ',
+  keywords: 'HASURO はすろ',
   openGraph: {
     title: {
       default: siteName,
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     creator: '@HASURO_dev',
   },
   verification: {
-    google: process.env.GOOGLE_VERIFICATION,
+    google: `${process.env.GOOGLE_VERIFICATION}`,
   },
   alternates: {
     canonical: url,
