@@ -1,0 +1,70 @@
+@mixin image($bottom, $z-index, $rotate) {
+    width: 70%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    position: absolute;
+    bottom: $bottom;
+    z-index: $z-index;
+    transform: rotate($rotate);
+}
+
+.container {
+    width: 100%;
+    min-height: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    @media screen and (min-width: 481px) and (max-width: 650px) {
+        min-height: 19rem;
+    }
+    @media screen and (max-width: 420px) {
+        min-height: 14rem;
+    }
+}
+
+.top-icon {
+    padding-top: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    z-index: 10;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.image0 {
+    @include image(0, 4, 9deg);
+}
+
+.image1 {
+    @include image(10px, 3, -9deg);
+    left: 10px;
+}
+
+.image2 {
+    @include image(20px, 2, 9deg);
+    right: 10px;
+}
+
+.image3 {
+    @include image(30px, 1, -9deg);
+}
+
+.image-box {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
