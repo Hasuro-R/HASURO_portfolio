@@ -6,10 +6,45 @@ import Footer from '@/components/footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const siteName = 'HASURO';
+const description = 'HASUROのポートフォリオです。';
+const url = 'https://hasuro.com';
+
 export const metadata: Metadata = {
-  title: 'HASURO',
-  description: 'HASUROのポートフォリオです。',
-}
+  title: {
+    default: siteName,
+    template: `%s - ${siteName}`,
+  },
+  description,
+  keywords: 'AniSphere, アニスフィア, アニメ',
+  openGraph: {
+    title: {
+      default: siteName,
+      template: `%s - ${siteName}`,
+    },
+    description,
+    url,
+    siteName,
+    locale: 'ja_JP',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: {
+      default: siteName,
+      template: `%s - ${siteName}`,
+    },
+    description,
+    site: '@HASURO_dev',
+    creator: '@HASURO_dev',
+  },
+  verification: {
+    google: '',
+  },
+  alternates: {
+    canonical: url,
+  },
+};
 
 export default function RootLayout({
   children,
