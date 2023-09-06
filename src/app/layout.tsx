@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     creator: '@HASURO_dev',
   },
   verification: {
-    google: '',
+    google: process.env.GOOGLE_VERIFICATION,
   },
   alternates: {
     canonical: url,
