@@ -7,11 +7,14 @@ import Contact from '@/components/home/about/Contact';
 
 export const metadata: Metadata = {
     title: 'About',
+    description: 'About me',
     openGraph: {
-        title: 'About'
+        title: 'About',
+        description: 'About me',
     },
     twitter: {
-        title: 'About'
+        title: 'About',
+        description: 'About me',
     },
 }
 
