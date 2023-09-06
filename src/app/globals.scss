@@ -11,6 +11,7 @@
 :root[data-theme='light'] {
   --text-color: rgb(64, 72, 85);
   --background-color: rgb(255, 255, 255);
+  --background-color-through: rgba(255, 255, 255, 0.8);
 
   --text-color-hover6: rgba(64, 72, 85, 0.6);
   --text-color-hover2: rgba(64, 72, 85, 0.2);
@@ -19,6 +20,7 @@
 :root[data-theme='dark'] {
   --text-color: rgb(255, 255, 255);
   --background-color: rgb(64, 72, 85);
+  --background-color-through: rgba(64, 72, 85, 0.8);
 
   --text-color-hover6: rgba(255, 255, 255, 0.6);
   --text-color-hover2: rgba(255, 255, 255, 0.2);
