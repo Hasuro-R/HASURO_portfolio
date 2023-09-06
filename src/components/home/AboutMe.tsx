@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import ReadMoreButton from '../UI/button/ReadMoreButton';
 import styles from './home.module.scss';
 
@@ -6,7 +7,9 @@ export default function AboutMe() {
         <div className={styles['container']}>
             <div className={styles['title-container']}>
                 <p className={styles['title']}>About me</p>
-                <ReadMoreButton />
+                <Link href='/about'>
+                    <ReadMoreButton />
+                </Link>
             </div>
             <div className={styles['text-container']}>
                 <span>ものづくりが大好きな17歳</span>
