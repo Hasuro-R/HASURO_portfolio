@@ -6,15 +6,15 @@ import Albums from '@/components/home/about/Albums';
 import Contact from '@/components/home/about/Contact';
 
 export const metadata: Metadata = {
-    title: 'About',
-    description: 'About me',
+    title: 'About me',
+    description: 'HASUROのAbout me',
     openGraph: {
-        title: 'About',
-        description: 'About me',
+        title: 'About me',
+        description: 'HASUROのAbout me',
     },
     twitter: {
-        title: 'About',
-        description: 'About me',
+        title: 'About me',
+        description: 'HASUROのAbout me',
     },
 }
 
