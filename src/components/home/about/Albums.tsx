@@ -5,6 +5,8 @@ import styles from '../home.module.scss';
 import AlbumBox from '@/components/album/AlbumBox';
 import { useState } from 'react';
 import AlbumImage from '@/components/album/AlbumImage';
+import { firstSweetImages, sweetImages } from '@/lib/image/sweetImages';
+import { firstFishImages, fishImages } from '@/lib/image/fishImages';
 
 export default function Albums() {
     const [show, setShow] = useState('');
@@ -17,8 +19,26 @@ export default function Albums() {
         };
     };
 
+    const setSweet = () => {
+        if (show === 'sweet') {
+            setShow('');
+        } else {
+            setShow('sweet');
+        };
+    };
+
+    const setFish = () => {
+        if (show === 'fish') {
+            setShow('');
+        } else {
+            setShow('fish');
+        };
+    };
+
     const albums = [
-        {icon: '🇨🇦', images: firstCanadaImages, setShow: setCanada},
+        {icon: '🇨🇦', images: firstCanadaImages, setShow: setCanada, kind: 'canada'},
+        {icon: '🥮', images: firstSweetImages, setShow: setSweet, kind: 'sweet'},
+        {icon: '🐟', images: firstFishImages, setShow: setFish, kind: 'fish'},
     ];
 
     return (
@@ -26,13 +46,15 @@ export default function Albums() {
             <div className={styles['title-container']}>
                 <p className={styles['title']}>Albums</p>
             </div>
-            <div className={styles['works-container']}>
+            <div className={styles['albums-container']}>
             {albums.map((item, key) => {
                 return (
                     <AlbumBox
                         icon={item.icon}
                         images={item.images}
                         setShow={item.setShow}
+                        kind={item.kind}
+                        show={show}
                         key={key}
                     />
                 )
@@ -42,6 +64,38 @@ export default function Albums() {
                 <div className={styles['images-container']}>
                     <>
                     {canadaImages.map((item, key) => {
+                        return (
+                            <AlbumImage
+                                image={item.image}
+                                alt={item.alt}
+                                number={key}
+                                key={key}
+                            />
+                        )
+                    })}
+                    </>
+                </div>
+            )}
+            {show === 'sweet' && (
+                <div className={styles['images-container']}>
+                    <>
+                    {sweetImages.map((item, key) => {
+                        return (
+                            <AlbumImage
+                                image={item.image}
+                                alt={item.alt}
+                                number={key}
+                                key={key}
+                            />
+                        )
+                    })}
+                    </>
+                </div>
+            )}
+            {show === 'fish' && (
+                <div className={styles['images-container']}>
+                    <>
+                    {fishImages.map((item, key) => {
                         return (
                             <AlbumImage
                                 image={item.image}
