@@ -53,6 +53,18 @@
     }
 }
 
+.albums-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    grid-gap: 2rem;
+    gap: 2rem;
+    @media screen and (min-width: 650px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 .images-container {
     width: 100%;
     display: grid;
