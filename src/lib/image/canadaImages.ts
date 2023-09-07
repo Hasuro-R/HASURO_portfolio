@@ -1,4 +1,4 @@
-import nightUnionNear from '@/public/album/canada/night_union_far.jpg';
+import nightUnionNear from '@/public/album/canada/night_union_near.jpg';
 import graffiti from '@/public/album/canada/graffiti.png';
 import niagara from '@/public/album/canada/niagara_rainbow.png';
 import casaLoma from '@/public/album/canada/CasaLoma.png';
