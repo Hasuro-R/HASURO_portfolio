@@ -11,20 +11,17 @@ export default function TimelineBox({
     let titleText;
     if (kind === 'released') {
         icon = '🎊';
-        titleText = <p className={styles['timeline-box-title']}>Released <a href={feature?.url} className={styles['title-url']} target='_blank'>{title}</a></p>;
+        titleText = <p className={styles['timeline-box-title']}>Released <a href={feature?.url} className={styles['title-url']} target='_blank'>{title}</a><span>{date}</span></p>;
     } else {
         icon = <div className={styles['timeline-circle']}></div>;
-        titleText = <p className={styles['timeline-box-title']}>{title}</p>;
+        titleText = <p className={styles['timeline-box-title']}>{title}<span>{date}</span></p>;
     };
 
     return (
         <div className={styles['timeline-box']}>
             <div className={styles['timeline-right']} style={{paddingBottom: isEnd ? '0' : ''}}>
                 <div className={styles['timeline-icon']}>{icon}</div>
-                <div className={styles['timeline-box-title-box']}>
                     {titleText}
-                    <p className={styles['timeline-box-date']}>{date}</p>
-                </div>
                 {feature && (
                     <div className={styles['feature-box']}>
                         {feature.description.split('\n').map((item, key) => {
