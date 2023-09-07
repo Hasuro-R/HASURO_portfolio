@@ -75,3 +75,13 @@
 .github-box {
     @include account-box(var(--text-color), var(--text-color-hover2));
 }
+
+.instagram-box {
+    @include account-box(var(--primary-pink), var(--primary-pink-hover));
+}
+
+.instagram-link {
+    @media screen and (max-width: 415px) {
+        display: none;
+    }
+}

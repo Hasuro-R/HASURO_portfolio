@@ -1,6 +1,6 @@
 'use client'
 
-import { FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa';
 import styles from './account.module.scss';
 import {motion} from 'framer-motion';
 
@@ -19,6 +19,13 @@ export default function AccountBoxes() {
                     whileHover={{scale: 1.2}}
                 >
                     <FaGithub />
+                </motion.div>
+            </a>
+            <a href='https://www.instagram.com/ren_hasuro/' target='_blank' className={styles['instagram-link']}>
+                <motion.div className={styles['instagram-box']}
+                    whileHover={{scale: 1.2}}
+                >
+                    <FaInstagram />
                 </motion.div>
             </a>
         </div>
