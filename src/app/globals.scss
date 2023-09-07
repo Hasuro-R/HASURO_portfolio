@@ -2,10 +2,12 @@
   --primary-pink: rgb(234, 94, 127);
   --primary-yellow: rgb(255, 226, 70);
   --primary-orange: rgb(240, 134, 75);
+  --primary-gray: rgb(120, 140, 146);
 
   --primary-pink-hover: rgba(234, 94, 127, 0.2);
   --primary-yellow-hover: rgba(255, 226, 70, 0.2);
   --primary-orange-hover: rgba(240, 134, 75, 0.2);
+  --primary-gray-hover: rgba(120, 140, 146, 0.4);
 }
 
 :root[data-theme='light'] {
