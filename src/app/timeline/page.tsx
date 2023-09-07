@@ -10,6 +10,7 @@ export const metadata: Metadata = {
         description: 'HASUROのTimeline',
     },
     twitter: {
+        card: 'summary_large_image',
         title: 'Timeline',
         description: 'HASUROのTimeline',
     },

@@ -13,6 +13,7 @@ export const metadata: Metadata = {
         description: 'HASUROのAbout me',
     },
     twitter: {
+        card: 'summary_large_image',
         title: 'About me',
         description: 'HASUROのAbout me',
     },
