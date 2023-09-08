@@ -5,7 +5,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: 1.8rem;
-    margin-top: 3.3rem;
+    margin-top: 4rem;
 }
 
 .title-container {
@@ -24,6 +24,27 @@
     @media screen and (min-width: 500px) {
         font-size: 2.1rem;
     }
+}
+
+.sub-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    span {
+        color: var(--primary-pink);
+    }
+    @media screen and (min-width: 500px) {
+        font-size: 1.7rem;
+    }
+}
+
+.sub-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
 }
 
 .text-container {
