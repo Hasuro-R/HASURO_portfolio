@@ -23,7 +23,7 @@ export default function ReadMoreButton() {
                 onMouseEnter={handleIsHover}
                 onMouseLeave={handleUnIsHover}
             >
-                More
+                もっと見る
                 <motion.div
                     className={styles['more-button-arrow']}
                     animate={isHover ? {x: 5} : {x: 0}}
