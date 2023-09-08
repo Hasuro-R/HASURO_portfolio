@@ -4,6 +4,7 @@ import Header from '@/components/header/Header';
 import Profile from '@/components/home/about/Profile';
 import Albums from '@/components/home/about/Albums';
 import Contact from '@/components/home/about/Contact';
+import SubHeader from '@/components/header/SubHeader';
 
 export const metadata: Metadata = {
     title: 'About me',
@@ -23,7 +24,7 @@ export default function AboutPage() {
 
     return (
         <>
-        <Header title='About me' />
+        <SubHeader title='About me' />
         <Profile />
         <Albums />
         <Contact />

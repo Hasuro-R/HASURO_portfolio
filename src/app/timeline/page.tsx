@@ -1,4 +1,5 @@
 import Header from "@/components/header/Header";
+import SubHeader from "@/components/header/SubHeader";
 import MainTimeline from "@/components/home/timeline/MainTimeline";
 import { Metadata } from "next";
 
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
 export default function TimelinePage() {
     return (
         <>
-        <Header title='Timeline' />
+        <SubHeader title='Timeline' />
         <MainTimeline />
         </>
     )
