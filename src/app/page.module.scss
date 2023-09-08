@@ -1,1 +1,42 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 5rem;
+    gap: 1.5rem;
+}
 
+.title {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    @media screen and (min-width: 500px) {
+        font-size: 2.1rem;
+    }
+}
+
+.url-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    color: var(--primary-gray);
+    &:hover {
+        span {
+            padding-left: 0.5rem;
+        }
+    }
+}
+
+.url {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.url-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
