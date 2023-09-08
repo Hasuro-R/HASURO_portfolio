@@ -212,4 +212,5 @@
 
 .category-menu-box-icon {
     @include category-box();
+    background-color: var(--primary-gray);
 }

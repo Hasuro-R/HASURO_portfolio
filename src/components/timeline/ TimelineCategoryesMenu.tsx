@@ -8,7 +8,7 @@ export default function TimelineCategoryesMenu({
 }: {
     kind: string, onClose: any, setKind: any,
 }) {
-
+    const backgroundGradation = 'linear-gradient(135deg, rgb(234, 94, 127) 0%, rgb(255, 226, 70) 50%, rgb(240, 134, 75) 100%)';
     const handleClick = (kind: string) => {
         setKind(kind);
         onClose();
@@ -24,7 +24,10 @@ export default function TimelineCategoryesMenu({
                     onClick={() => handleClick(item.kind)}
                     key={key}
                 >
-                    <div className={styles['category-menu-box-icon']} style={item.kind === kind ? {background: 'linear-gradient(135deg, rgb(234, 94, 127) 0%, rgb(255, 226, 70) 50%, rgb(240, 134, 75) 100%)'} : {}}>
+                    <div
+                        className={styles['category-menu-box-icon']}
+                        style={item.kind === kind ? {background: backgroundGradation} : {}}
+                    >
                         <div className={styles['category-box-cushion']}>
                             <div className={styles['category-icon']}>{item.icon}</div>
                         </div>
