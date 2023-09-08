@@ -1,3 +1,14 @@
+@mixin category-box() {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+    padding: 0.1rem;
+    position: relative;
+}
+
 .timeline-box {
     width: 100%;
     display: flex;
@@ -104,4 +115,101 @@
     font-size: 0.9rem;
     border-radius: 3px;
     color: #fff;
+}
+
+//timeline category
+
+.category-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.8rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.category-box {
+    @include category-box();
+    background: linear-gradient(135deg, rgb(234, 94, 127) 0%, rgb(255, 226, 70) 50%, rgb(240, 134, 75) 100%);
+}
+
+.category-box-cushion {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+    background-color: var(--background-color);
+    position: relative;
+}
+
+.category-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+}
+
+.category-text {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-gray);
+}
+
+.category-change-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100vh;
+    font-size: 1.1rem;
+    padding: 0.1rem;
+    &:hover {
+        background-color: rgba(183, 183, 182, 0.2);
+    }
+}
+
+//category menu
+
+.category-menu-container {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    z-index: 110;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0.3rem;
+    border-radius: 0.7rem;
+    background-color: var(--background-color);
+    box-shadow: 3px 5px 20px 1px var(--primary-gray-hover);
+}
+
+.category-menu-background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.category-menu-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(183, 183, 182, 0.2);
+    }
+}
+
+.category-menu-box-icon {
+    @include category-box();
 }

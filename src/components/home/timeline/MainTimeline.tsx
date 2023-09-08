@@ -4,6 +4,7 @@ import { useState } from 'react';
 import styles from '../home.module.scss';
 import { timelines } from '@/lib/timeline/timelines';
 import TimelineBox from '@/components/timeline/TimelineBox';
+import TimelineCategory from '@/components/timeline/TimelineCategory';
 
 export default function MainTimeline() {
     const [kind, setKind] = useState('all');
@@ -25,50 +26,56 @@ export default function MainTimeline() {
 
     return (
         <div className={styles['container']}>
-        {timelines2023.length !== 0 && (
-            <>
             <div className={styles['title-container']}>
-                <p className={styles['title']}>2023</p>
+                <p className={styles['title']}>Timeline</p>
+                <TimelineCategory kind={kind} setKind={setKind} />
             </div>
-            <div className={styles['timeline-box-container']}>
-            {timelines2023.map((item, key) => {
-                return (
-                    <TimelineBox
-                        title={item.title}
-                        date={item.date}
-                        feature={item.feature}
-                        kind={item.kind}
-                        number={key}
-                        end={timelines2023.length}
-                        key={key}
-                    />
-                )
-            })}
+            <div className={styles['sub-container']}>
+            {timelines2023.length !== 0 && (
+                <>
+                <div className={styles['title-container']}>
+                    <p className={styles['sub-title']}>2023</p>
+                </div>
+                <div className={styles['timeline-box-container']}>
+                {timelines2023.map((item, key) => {
+                    return (
+                        <TimelineBox
+                            title={item.title}
+                            date={item.date}
+                            feature={item.feature}
+                            kind={item.kind}
+                            number={key}
+                            end={timelines2023.length}
+                            key={key}
+                        />
+                    )
+                })}
+                </div>
+                </>
+            )}
+            {timelines2022.length !== 0 && (
+                <>
+                <div className={styles['title-container']}>
+                    <p className={styles['sub-title']}>2022</p>
+                </div>
+                <div className={styles['timeline-box-container']}>
+                {timelines2022.map((item, key) => {
+                    return (
+                        <TimelineBox
+                            title={item.title}
+                            date={item.date}
+                            feature={item.feature}
+                            kind={item.kind}
+                            number={key}
+                            end={timelines2022.length}
+                            key={key}
+                        />
+                    )
+                })}
+                </div>
+                </>
+            )}
             </div>
-            </>
-        )}
-        {timelines2022.length !== 0 && (
-            <>
-            <div className={styles['title-container']}>
-                <p className={styles['title']}>2022</p>
-            </div>
-            <div className={styles['timeline-box-container']}>
-            {timelines2022.map((item, key) => {
-                return (
-                    <TimelineBox
-                        title={item.title}
-                        date={item.date}
-                        feature={item.feature}
-                        kind={item.kind}
-                        number={key}
-                        end={timelines2022.length}
-                        key={key}
-                    />
-                )
-            })}
-            </div>
-            </>
-        )}
         </div>
     )
 }
