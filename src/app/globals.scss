@@ -17,6 +17,10 @@
 
   --text-color-hover6: rgba(64, 72, 85, 0.6);
   --text-color-hover2: rgba(64, 72, 85, 0.2);
+
+  --box-shadow-color: 0 0 1px var(--primary-orange), 0 0 2px var(--primary-orange), 0 0 3px var(--primary-orange), 0 0 5px var(--primary-pink);
+
+  --change-button-justify-content: flex-start;
 }
 
 :root[data-theme='dark'] {
@@ -26,6 +30,10 @@
 
   --text-color-hover6: rgba(255, 255, 255, 0.6);
   --text-color-hover2: rgba(255, 255, 255, 0.2);
+
+  --box-shadow-color: 0 0 1px var(--primary-yellow), 0 0 2px var(--primary-yellow), 0 0 3px var(--primary-yellow), 0 0 5px var(--primary-orange);
+
+  --change-button-justify-content: flex-end;
 }
 
 * {
@@ -79,7 +87,6 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 5rem;
   padding: 0 1.2rem;
   @media screen and (min-width: 800px) {
     width: 800px;
