@@ -11,6 +11,9 @@ import sachertorte from '@/public/album/sweet/sachertorte.jpg';
 import tarttatan from '@/public/album/sweet/tarttatan.jpg';
 import snowman from '@/public/album/sweet/snowman.jpg';
 import wornatCake from '@/public/album/sweet/wornat_cake.png';
+import milkCrepe from '@/public/album/sweet/milk_crepe.jpg';
+import peachTart from '@/public/album/sweet/peach_tart.jpg';
+import creamPuff from '@/public/album/sweet/cream_puff.png';
 
 export const sweetImages = [
     {image: carafulCannere, alt: 'caraful cannere'},
@@ -19,13 +22,16 @@ export const sweetImages = [
     {image: firstConan, alt: 'cheese cake'},
     {image: wornatCake, alt: 'walnut cake'},
     {image: opera, alt: 'opera'},
+    {image: milkCrepe, alt: 'milk crepe'},
     {image: cannere, alt: 'cannere'},
-    {image: snowman, alt: 'snowman'},
     {image: sachertorte, alt: 'sachertorte'},
     {image: tarttatan, alt: 'tarttatan'},
     {image: carafulCannereSideway, alt: 'caraful cannere'},
     {image: appleTart, alt: 'apple tart'},
     {image: bakedChocolateCake, alt: 'baked chocolate cake'},
+    {image: snowman, alt: 'snowman cake'},
+    {image: peachTart, alt: 'peach tart'},
+    {image: creamPuff, alt: 'cream puff'},
 ];
 
 export const firstSweetImages = sweetImages.slice(0, 4);
