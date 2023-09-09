@@ -100,9 +100,10 @@
 }
 
 .focus-image {
-    width: 78%;
+    width: 85%;
     height: auto;
-    aspect-ratio: 3 / 4;
+    max-width: 90%;
+    max-height: 90%;
     object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
