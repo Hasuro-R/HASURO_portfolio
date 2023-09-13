@@ -1,4 +1,5 @@
 export const timelines = [
+    {title: 'HASUROG', feature: {url: 'https://blog.hasuro.com', description: 'HASURO（私）のブログ。\nAstroを使ってみました。', techs: ['astro', 'react', 'ts']}, year: '2023', date: 'Sep 13', kind: 'released'},
     {title: 'this portfolio', feature: {url: 'https://hasuro.com', description: 'HASURO（私）のポートフォリオ。\nテーマカラー変更やアルバムのUIに力を入れたシンプルなサイト', techs: ['next', 'ts', 'sass']}, year: '2023', date: 'Sep 7', kind: 'released'},
     {title: 'AniSphereユーザー数50人突破!!', year: '2023', date: 'Aug 23', kind: 'other'},
     {title: 'Started leaning Flutter', year: '2023', date: 'Aug 18', kind: 'other'},
