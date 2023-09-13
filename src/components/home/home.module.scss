@@ -74,6 +74,18 @@
     }
 }
 
+.index-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    grid-gap: 1.2rem;
+    gap: 1.2rem;
+    @media screen and (min-width: 450px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 .albums-container {
     width: 100%;
     display: grid;
