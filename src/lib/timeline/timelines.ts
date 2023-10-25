@@ -1,4 +1,5 @@
 export const timelines = [
+    {title: 'アプリ甲子園2023 Cygames賞', year: '2023', date: 'Oct 22', kind: 'award'},
     {title: '森日向子 OfficialSite', feature: {url: 'https://mori-hinako.com', description: '森 日向子さんの公式サイト。\nスクロールアニメーションやってみました。', techs: ['next', 'ts', 'sass']}, year: '2023', date: 'Oct 6', kind: 'released'},
     {title: 'HASUROG', feature: {url: 'https://blog.hasuro.com', description: 'HASURO（私）のブログ。\nAstroを使ってみました。', techs: ['astro', 'react', 'ts']}, year: '2023', date: 'Sep 13', kind: 'released'},
     {title: 'this portfolio', feature: {url: 'https://hasuro.com', description: 'HASURO（私）のポートフォリオ。\nテーマカラー変更やアルバムのUIに力を入れたシンプルなサイト', techs: ['next', 'ts', 'sass']}, year: '2023', date: 'Sep 7', kind: 'released'},
@@ -14,5 +15,5 @@ export const timelines = [
 ];
 
 export const releasedTimelines = timelines.filter((timeline) => {
-    return timeline.kind === 'released';
+    return timeline.kind === 'released' || timeline.kind === 'award';
 });
