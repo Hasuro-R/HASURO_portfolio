@@ -13,6 +13,8 @@ export default function MainTimeline() {
             return item;
         } else if (kind === 'released') {
             return item.kind === 'released';
+        } else if (kind === 'award') {
+            return item.kind === 'award';
         } else if (kind === 'other') {
             return item.kind === 'other';
         };

@@ -12,6 +12,9 @@ export default function TimelineBox({
     if (kind === 'released') {
         icon = '🎊';
         titleText = <p className={styles['timeline-box-title']}>Released <a href={feature?.url} className={styles['title-url']} target='_blank'>{title}</a><span>{date}</span></p>;
+    } else if (kind === 'award') {
+        icon = '🏆';
+        titleText = <p className={styles['timeline-box-title']}>{title}<span>{date}</span></p>;
     } else {
         icon = <div className={styles['timeline-circle']}></div>;
         titleText = <p className={styles['timeline-box-title']}>{title}<span>{date}</span></p>;
@@ -19,7 +22,7 @@ export default function TimelineBox({
 
     return (
         <div className={styles['timeline-box']}>
-            <div className={styles['timeline-right']} style={{paddingBottom: isEnd ? '0' : ''}}>
+            <div className={styles[isEnd ? 'timeline-right-end' : 'timeline-right']} style={{paddingBottom: isEnd ? '0' : ''}}>
                 <div className={styles['timeline-icon']}>{icon}</div>
                     {titleText}
                 {feature && (
