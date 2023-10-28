@@ -1,26 +1,26 @@
 # HASUROのポートフォリオ
 
-![アイコン](https://github.com/inoren-ten/src/public/../../../../../src/public/hasuro_icon.png)
+![アイコン](https://github.com/inoren-ten/HASURO_portfolio/assets/116473325/680d0d2d-73f8-4af8-b30f-195e03795137)
 
 
-## 概要
+## 🤪 概要
 
 [HASURO](https://twitter.com/HASURO_dev)のポートフォリオです。
 構成としては自己紹介（About）ページやタイムラインページなどです。テーマカーラの切り替えも実装しています。
 Webサイトとして公開（2023/9/7）。[こちら](https://hasuro.com)
 
-## 使用した技術
+## ⚒️ 使用した技術
 
 - Next.js（ver 13.4.19）【App Router】
 - TypeScript
 - Sass（スタイル）
 - framer-motion（アニメーション）
 
-## デプロイ
+## 🌐 デプロイ
 
-vercel（Next.js提供してるところなので、無難）
+vercel（Next.js提供してるところなので無難）
 
-## ファイル構成
+## 📁 ファイル構成
 
     .
     ├── public/
@@ -87,32 +87,32 @@ vercel（Next.js提供してるところなので、無難）
     ├── README.md
     └── tsconfig.json
 
-## 詳しい実装
+## 🫠 詳しい実装
 
 ### Aboutページ
 
 #### アルバム
 
 ホバーしたり選択するとアルバムが開くようなUI。
-@/lib/image/下のファイルに写真の配列を変えれば表示する画像が変わる。画像は@/public/album下のフォルダに入れる。
+`@/lib/image/`下のファイルに写真の配列を変えれば表示する画像が変わる。画像は`@/public/album`下のフォルダに入れる。
 
-表示したいアルバムは@/components/about/Albums.tsxのalbums配列に以下のように定義する。
+表示したいアルバムは`@/components/about/Albums.tsxのalbums`配列に以下のように定義する。
 
-    // iconには絵文字、imagesには@lib/image下のフォルダ下に置いてある画像の配列の初めの4つを抜き出した配列、kindにはアルバムの名前を入れる。
+    // iconには絵文字、imagesには'@lib/image'下のフォルダ下に置いてある画像の配列の初めの4つを抜き出した配列、kindにはアルバムの名前を入れる。
 
     const albums = [
         {icon: '🇨🇦', images: firstCanadaImages, setShow: setCanada, kind: 'canada'},
     ];
 
-###  Timelineページ
+### Timelineページ
 
 #### Timelineの定義
 
-Timelineは@/lib/timeline/timelines.tsに配列を以下のように定義することで表示可能。
+Timelineは`@/lib/timeline/timelines.ts`に配列を以下のように定義することで表示可能。
 ちなみにTimelineにはReleased（リリースした情報）と、他の情報の時とでUIが異なる。
 
-    // techsには@/lib/work/returnTech.tsに定義した技術を入れる
-    // kindには@/lib/timeline/timelineCategoryes.tsに定義したcategoryを入れる
+    // techsには'@/lib/work/returnTech.ts'に定義した技術を入れる
+    // kindには'@/lib/timeline/timelineCategoryes.ts'に定義したcategoryを入れる
 
     export const timelines = [
         // Releaseの場合
@@ -124,7 +124,7 @@ Timelineは@/lib/timeline/timelines.tsに配列を以下のように定義する
 #### Timelineのカテゴリー
 
 Timelineのカテゴリーを定義することで、絞って表示することが可能。
-@/lib/timeline/timelineCategoryes.tsに配列を以下のように定義する。
+`@/lib/timeline/timelineCategoryes.ts`に配列を以下のように定義する。
 
     // kindにジャンル、iconに絵文字、textに表示するジャンルの文字を定義
 
@@ -149,11 +149,11 @@ Timelineの表示の左には、カテゴリーによって表示するアイコ
 
 ### 全体の配色
 
-基本的に@/app/globals.scssの:root内に、サイト内で使用する色を定義している。
+基本的に`@/app/globals.scss`の:root内に、サイト内で使用する色を定義している。
 
 テーマカラーによって変更される値に関しては、それぞれの場合に同じ変数名で定義。
 
-## 最後に
+## 💬 最後に
 
 実装してから結構時間経ってからREADMEを記述したので、もしかしたら間違っている箇所もあるかもしれませんので、多めに見ていただけると幸いです。
 
