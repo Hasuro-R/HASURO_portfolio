@@ -1,7 +1,6 @@
 # HASUROのポートフォリオ
 
-![アイコン](https://github.com/inoren-ten/src/public/../../../../../src/public/hasuro_icon.png)
-
+![hasuro_icon](https://github.com/inoren-ten/HASURO_portfolio/assets/116473325/680d0d2d-73f8-4af8-b30f-195e03795137)
 
 ## 概要
 
@@ -18,7 +17,7 @@ Webサイトとして公開（2023/9/7）。[こちら](https://hasuro.com)
 
 ## デプロイ
 
-vercel（Next.js提供してるところなので、無難）
+vercel（Next.js提供してるところなので無難）
 
 ## ファイル構成
 
