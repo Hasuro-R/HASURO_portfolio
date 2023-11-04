@@ -88,7 +88,7 @@ vercel（Next.js提供してるところなので無難）
 
 ## 🫠 詳しい実装
 
-### Aboutページ
+### [Aboutページ](https://hasuro.com/about)
 
 #### アルバム
 
@@ -103,7 +103,7 @@ vercel（Next.js提供してるところなので無難）
         {icon: '🇨🇦', images: firstCanadaImages, setShow: setCanada, kind: 'canada'},
     ];
 
-### Timelineページ
+### [Timelineページ](https://hasuro.com/timeline)
 
 #### Timelineの定義
 
