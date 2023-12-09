@@ -32,19 +32,21 @@ export default function TimelineBox({
                                 <p className={styles['feature-box-text']} key={key}>{item}</p>
                             )
                         })}
-                        <div className={styles['techs-container']}>
-                        {feature.techs.map((item, key) => {
-                            return (
-                                <div
-                                    className={styles['tech-box']}
-                                    style={{backgroundColor: returnTech(item).color}}
-                                    key={key}
-                                >
-                                    {returnTech(item).text}
-                                </div>
-                            )
-                        })}
-                        </div>
+                        {feature.techs.length !== 0 && (
+                            <div className={styles['techs-container']}>
+                            {feature.techs.map((item, key) => {
+                                return (
+                                    <div
+                                        className={styles['tech-box']}
+                                        style={{backgroundColor: returnTech(item).color}}
+                                        key={key}
+                                    >
+                                        {returnTech(item).text}
+                                    </div>
+                                )
+                            })}
+                            </div>
+                        )}
                     </div>
                 )}
             </div>
