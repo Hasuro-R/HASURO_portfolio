@@ -1,6 +1,4 @@
 import { Metadata } from 'next';
-import styles from './about.module.scss';
-import Header from '@/components/header/Header';
 import Profile from '@/components/home/about/Profile';
 import Albums from '@/components/home/about/Albums';
 import Contact from '@/components/home/about/Contact';
@@ -14,7 +12,7 @@ export const metadata: Metadata = {
         description: 'HASUROのAbout me',
     },
     twitter: {
-        card: 'summary_large_image',
+        card: 'summary',
         title: 'About me',
         description: 'HASUROのAbout me',
     },

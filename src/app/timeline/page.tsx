@@ -1,4 +1,3 @@
-import Header from "@/components/header/Header";
 import SubHeader from "@/components/header/SubHeader";
 import MainTimeline from "@/components/home/timeline/MainTimeline";
 import { Metadata } from "next";
@@ -11,7 +10,7 @@ export const metadata: Metadata = {
         description: 'HASUROのTimeline',
     },
     twitter: {
-        card: 'summary_large_image',
+        card: 'summary',
         title: 'Timeline',
         description: 'HASUROのTimeline',
     },
