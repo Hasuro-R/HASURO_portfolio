@@ -1,4 +1,5 @@
 export const timelines = [
+    {title: 'blog.hasuro.com', feature: {url: 'https://blog.hasuro.com/articles/2', description: 'Flutter開発でのトピック', techs: ['flutter']}, year: '2023', date: 'Dec 31', kind: 'writing'},
     {title: '中高生国際Rubyプログラミングコンテスト', feature: {url: 'https://www.ruby-procon.net/', description: '・ソニックガーデン賞\n・Matz賞\n・審査員特別賞', techs: []}, year: '2023', date: 'Dec 9', kind: 'award'},
     {title: 'アプリ甲子園2023 Cygames賞', year: '2023', date: 'Oct 22', kind: 'award'},
     {title: '森日向子 OfficialSite', feature: {url: 'https://mori-hinako.com', description: '森 日向子さんの公式サイト。\nスクロールアニメーションやってみました。', techs: ['next', 'ts', 'sass']}, year: '2023', date: 'Oct 6', kind: 'released'},
