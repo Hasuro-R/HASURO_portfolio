@@ -7,7 +7,7 @@ export default function Header({title}: {title: string}) {
         <div className={styles['top-account-container']}>
             <div className={styles['top-account-container-left']}>
                 <div className={styles['top-account-icon-box']}>
-                <MainIcon />
+                    <MainIcon />
                 </div>
                 <p className={styles['top-account-name']}>{title}</p>
             </div>
