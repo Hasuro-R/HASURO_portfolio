@@ -61,11 +61,13 @@
 //AccountBoxes
 
 .account-box-container {
-    width: 100%;
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: flex-end;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 0.6rem;
+    @media screen and (max-width: 415px) {
+        // grid-template-columns: 1fr 1fr;
+    }
 }
 
 .twitter-box {
@@ -76,12 +78,16 @@
     @include account-box(var(--text-color), var(--text-color-hover2));
 }
 
+.wantedly-box {
+    @include account-box(#89f7fe, var(--primary-green-hover));
+}
+
 .instagram-box {
     @include account-box(var(--primary-pink), var(--primary-pink-hover));
 }
 
-.instagram-link {
+.none-link {
     @media screen and (max-width: 415px) {
-        display: none;
+        // display: none;
     }
 }
