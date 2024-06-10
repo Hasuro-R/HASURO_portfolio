@@ -18,6 +18,12 @@ export default function TimelineBox({
     } else if (kind === 'writing') {
         icon = '✍️';
         titleText = <p className={styles['timeline-box-title']}>Published an article on <a href={feature?.url} className={styles['title-url']} target='_blank'>{title}</a><span>{date}</span></p>;
+    } else if (kind === 'internship') {
+        icon = '💻';
+        titleText = <p className={styles['timeline-box-title']}>{title}<span>{date}</span></p>;
+    } else if (kind === 'hackathon') {
+        icon = '🔥';
+        titleText = <p className={styles['timeline-box-title']}>{title}<span>{date}</span></p>;
     } else {
         icon = <div className={styles['timeline-circle']}></div>;
         titleText = <p className={styles['timeline-box-title']}>{title}<span>{date}</span></p>;

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import styles from '../home.module.scss';
 import { timelines } from '@/lib/timeline/timelines';
 import TimelineBox from '@/components/timeline/TimelineBox';
@@ -21,12 +21,20 @@ export default function MainTimeline() {
             return item.kind === 'other';
         };
     });
+    const timelines2024 = allTimelines.filter((item) => {
+        return item.year === '2024';
+    });
     const timelines2023 = allTimelines.filter((item) => {
         return item.year === '2023';
     });
     const timelines2022 = allTimelines.filter((item) => {
         return item.year === '2022';
     });
+    const timelinesArray = [
+        { item: timelines2024, title: '2024' },
+        { item: timelines2023, title: '2023' },
+        { item: timelines2022, title: '2022' },
+    ];
 
     return (
         <div className={styles['container']}>
@@ -35,50 +43,30 @@ export default function MainTimeline() {
                 <TimelineCategory kind={kind} setKind={setKind} />
             </div>
             <div className={styles['sub-container']}>
-            {timelines2023.length !== 0 && (
-                <>
-                <div className={styles['title-container']}>
-                    <p className={styles['sub-title']}>2023</p>
-                </div>
-                <div className={styles['timeline-box-container']}>
-                {timelines2023.map((item, key) => {
-                    return (
-                        <TimelineBox
-                            title={item.title}
-                            date={item.date}
-                            feature={item.feature}
-                            kind={item.kind}
-                            number={key}
-                            end={timelines2023.length}
-                            key={key}
-                        />
-                    )
-                })}
-                </div>
-                </>
-            )}
-            {timelines2022.length !== 0 && (
-                <>
-                <div className={styles['title-container']}>
-                    <p className={styles['sub-title']}>2022</p>
-                </div>
-                <div className={styles['timeline-box-container']}>
-                {timelines2022.map((item, key) => {
-                    return (
-                        <TimelineBox
-                            title={item.title}
-                            date={item.date}
-                            feature={item.feature}
-                            kind={item.kind}
-                            number={key}
-                            end={timelines2022.length}
-                            key={key}
-                        />
-                    )
-                })}
-                </div>
-                </>
-            )}
+            {timelinesArray.map((array, arrayKey) => (
+                array.item.length !== 0 && (
+                    <React.Fragment key={arrayKey}>
+                        <div className={styles['title-container']}>
+                            <p className={styles['sub-title']}>{array.title}</p>
+                        </div>
+                        <div className={styles['timeline-box-container']}>
+                        {array.item.map((item, key) => {
+                            return (
+                                <TimelineBox
+                                    title={item.title}
+                                    date={item.date}
+                                    feature={item.feature}
+                                    kind={item.kind}
+                                    number={key}
+                                    end={array.item.length}
+                                    key={key}
+                                />
+                            )
+                        })}
+                        </div>
+                    </React.Fragment>
+                )
+            ))}
             </div>
         </div>
     )
