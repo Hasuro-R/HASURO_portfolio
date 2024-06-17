@@ -17,6 +17,10 @@ export default function MainTimeline() {
             return item.kind === 'award';
         } else if (kind === 'writing') {
             return item.kind === 'writing';
+        } else if (kind === 'hackathon') {
+            return item.kind === 'hackathon';
+        } else if (kind === 'internship') {
+            return item.kind === 'internship';
         } else if (kind === 'other') {
             return item.kind === 'other';
         };
