@@ -1,4 +1,6 @@
-export const timelines = [
+import { timelineType } from "@/types/timelineType";
+
+export const timelines = <timelineType[]>[
     {title: '株式会社イロリ', feature: {url: 'https://iroriworks.com/', description: 'モバイルエンジニアの長期インターン', techs: ['flutter']}, year: '2024', date: 'Jun ~ now', kind: 'internship'},
     {title: 'CA Tech Lounge入会', year: '2024', date: 'Jun ~ now', kind: 'other'},
     {title: 'Open Hack U Osaka', feature: {url: '', description: 'LINEヤフー株式会社主催のハッカソンに出場\n近未来型鬼ごっこアプリを開発', techs: ['swiftui', 'firebase', 'next']}, year: '2024', date: 'Mar 16', kind: 'hackathon'},
@@ -23,6 +25,6 @@ export const timelines = [
     {title: 'Started programming', year: '2022', date: 'Mar 26', kind: 'other'},
 ];
 
-export const releasedTimelines = timelines.filter((timeline) => {
-    return timeline.kind === 'released' || timeline.kind === 'award';
+export const topTimelines = timelines.filter((timeline) => {
+    return timeline.kind === 'released' || timeline.kind === 'award' || timeline.kind === 'internship';
 });
