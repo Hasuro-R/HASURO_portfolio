@@ -3,6 +3,7 @@ import anisphereAboutImage from '@/public/work/about-open-graph.png';
 import portfolioImage from '@/public/work/HASURO_ogp_image.png';
 import HASUROGImage from '@/public/work/HASUROG_ogp.png';
 import morihinakoImage from '@/public/work/morihinako.png';
+import fwtImage from '@/public/work/fwt.png';
 
 export const works = [
     {title: 'AniSphere', image: anisphereImage, url: 'https://anisphere.jp', description: 'アニメ共有サイト', techs: ['next', 'rails']},
@@ -10,4 +11,5 @@ export const works = [
     {title: 'portfolio', image: portfolioImage, url: '', description: 'このサイト', techs: ['next']},
     {title: 'HASUROG', image: HASUROGImage, url: 'https://blog.hasuro.com', description: 'HASUROのブログ', techs: ['astro','react']},
     {title: '森日向子 OfficialSite', image: morihinakoImage, url: 'https://mori-hinako.com', description: '森日向子さんの公式サイト', techs: ['next']},
+    {title: 'Futurealize with Tech!', image: fwtImage, url: 'https://github.com/Futurealize-with-Tech', description: 'ライフイズテックの卒業企画', techs: ['next', 'prisma']},
 ];
