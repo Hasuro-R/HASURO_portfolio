@@ -15,7 +15,7 @@ export default function AccountBoxes() {
                     <FaTwitter />
                 </motion.div>
             </a>
-            <a href='https://github.com/inoren-ten' target='_blank' rel='noreferrer'>
+            <a href='https://github.com/Hasuro-R' target='_blank' rel='noreferrer'>
                 <motion.div className={styles['github-box']}
                     whileHover={{ scale: 1.2 }}
                 >
