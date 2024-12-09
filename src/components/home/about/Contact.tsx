@@ -8,7 +8,7 @@ export default function Contact() {
                 <p className={styles['title']}>Contact</p>
             </div>
             <div className={styles['text-container']}>
-                <span>hasuro.developer00@gmail.com or <a href='https://twitter.com/HASURO_dev' className={styles['link']} target='_blank'>Twitter</a></span>
+                <span>iam@hasuro.com or <a href='https://twitter.com/HASURO_dev' className={styles['link']} target='_blank'>Twitter</a></span>
             </div>
         </div>
     )
