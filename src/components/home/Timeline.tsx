@@ -8,6 +8,7 @@ import { timelineType } from '@/types/timelineType';
 export default function Timeline() {
     const timeline23 = topTimelines.filter((timeline) => timeline.year === '2023');
     const timeline24 = topTimelines.filter((timeline) => timeline.year === '2024');
+    // const timeline25 = topTimelines.filter((timeline) => timeline.year === '2025');
 
     return (
         <div className={styles['container']}>
@@ -17,6 +18,7 @@ export default function Timeline() {
                     <ReadMoreButton />
                 </Link>
             </div>
+            {/* <TimeLineSection year='2025' timelines={timeline25} /> */}
             <TimeLineSection year='2024' timelines={timeline24} />
             <TimeLineSection year='2023' timelines={timeline23} />
         </div>

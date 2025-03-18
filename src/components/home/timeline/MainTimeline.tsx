@@ -25,6 +25,9 @@ export default function MainTimeline() {
             return item.kind === 'other';
         };
     });
+    const timelines2025 = allTimelines.filter((item) => {
+        return item.year === '2025';
+    });
     const timelines2024 = allTimelines.filter((item) => {
         return item.year === '2024';
     });
@@ -35,6 +38,7 @@ export default function MainTimeline() {
         return item.year === '2022';
     });
     const timelinesArray = [
+        { item: timelines2025, title: '2025' },
         { item: timelines2024, title: '2024' },
         { item: timelines2023, title: '2023' },
         { item: timelines2022, title: '2022' },
