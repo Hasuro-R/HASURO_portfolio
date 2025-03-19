@@ -1,6 +1,7 @@
-import SubHeader from "@/components/header/SubHeader";
-import MainTimeline from "@/components/home/timeline/MainTimeline";
-import { Metadata } from "next";
+import { Metadata } from 'next';
+import SubHeader from '@/components/header/SubHeader';
+import MainTimeline from '@/components/home/timeline/MainTimeline';
+import styles from '../page.module.scss';
 
 export const metadata: Metadata = {
     title: 'Timeline',
@@ -18,9 +19,9 @@ export const metadata: Metadata = {
 
 export default function TimelinePage() {
     return (
-        <>
-        <SubHeader title='Timeline' />
-        <MainTimeline />
-        </>
+        <div className={styles['page-cn']}>
+            <SubHeader title='Timeline' />
+            <MainTimeline />
+        </div>
     )
 }

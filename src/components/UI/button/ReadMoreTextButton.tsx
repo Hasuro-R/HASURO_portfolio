@@ -2,11 +2,11 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FiArrowRightCircle } from 'react-icons/fi';
+import { FiArrowRight } from 'react-icons/fi';
 import styles from './button.module.scss';
 
-export default function ReadMoreButton() {
-    const [isHover, setIsHover] = useState(false);
+export default function ReadMoreTextButton({ text } : { text: string }) {
+  const [isHover, setIsHover] = useState(false);
 
     const handleIsHover = () => {
         setIsHover(true);
@@ -17,19 +17,19 @@ export default function ReadMoreButton() {
     };
 
     return (
-        <div className={styles['more-button']}>
+        <div className={styles['more-text-btn']}>
             <motion.div
-                className={styles['more-button-top']}
+                className={styles['more-text-btn-top']}
                 onMouseEnter={handleIsHover}
                 onMouseLeave={handleUnIsHover}
             >
-                Read more
+                {text}
                 <motion.div
-                    className={styles['more-button-arrow']}
+                    className={styles['more-text-btn-arrow']}
                     animate={{ x: isHover ? 5 : 0 }}
                     transition={{ duration: 0.4 }}
                 >
-                    <FiArrowRightCircle />
+                    <FiArrowRight />
                 </motion.div>
             </motion.div>
         </div>

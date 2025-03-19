@@ -7,12 +7,12 @@ import TopIndex from '@/components/home/TopIndex'
 
 export default function Home() {
   return (
-    <>
-    <Header title='HASURO' />
-    <TopIndex />
-    <AboutMe />
-    <Works />
-    <Timeline />
-    </>
+    <div className={styles['page-cn']}>
+      <Header title='HASURO' />
+      <TopIndex />
+      <AboutMe />
+      <Works />
+      <Timeline />
+    </div>
   )
 }

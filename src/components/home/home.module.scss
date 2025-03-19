@@ -5,7 +5,6 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: 1.8rem;
-    margin-top: 4rem;
 }
 
 .title-container {
@@ -58,7 +57,6 @@
     word-break: break-all;
     @media screen and (min-width: 500px) {
         gap: 1rem;
-        font-size: 1.1rem;
     }
 }
 
@@ -84,6 +82,15 @@
     @media screen and (min-width: 450px) {
         grid-template-columns: 1fr 1fr 1fr;
     }
+}
+
+.index-cn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .albums-container {
@@ -137,4 +144,11 @@
     align-items: center;
     justify-content: flex-start;
     gap: 0.3rem;
+}
+
+.timeline-more-btn-cn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -3,6 +3,7 @@ import Profile from '@/components/home/about/Profile';
 import Albums from '@/components/home/about/Albums';
 import Contact from '@/components/home/about/Contact';
 import SubHeader from '@/components/header/SubHeader';
+import styles from '../page.module.scss';
 
 export const metadata: Metadata = {
     title: 'About me',
@@ -21,11 +22,11 @@ export const metadata: Metadata = {
 export default function AboutPage() {
 
     return (
-        <>
-        <SubHeader title='About me' />
-        <Profile />
-        <Albums />
-        <Contact />
-        </>
+        <div className={styles['page-cn']}>
+            <SubHeader title='About me' />
+            <Profile />
+            <Albums />
+            <Contact />
+        </div>
     );
 }

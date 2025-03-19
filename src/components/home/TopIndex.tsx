@@ -5,10 +5,10 @@ import IndexBox from '../Index/IndexBox';
 export default function TopIndex() {
     return (
         <div className={styles['container']}>
-            <div className={styles['index-container']}>
+            <div className={styles['index-cn']}>
             {index.map((item, key) => {
                 return (
-                    <a href={item.url} className='link' key={key}>
+                    <a href={item.url} className='' key={key}>
                         <IndexBox
                             icon={item.icon}
                             title={item.title}
