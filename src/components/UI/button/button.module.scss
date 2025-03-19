@@ -16,13 +16,39 @@
     align-items: center;
     justify-content: center;
     gap: 0.3rem;
-    padding: 0.2rem 0.6rem;
+    padding: 0.25rem 0.7rem;
     font-size: 1rem;
     font-weight: 500;
     background-color: var(--background-color);
 }
 
 .more-button-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.more-text-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.more-text-btn-top {
+    width: 100%;
+    height: 100%;
+    border-radius: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--primary-gray);
+}
+
+.more-text-btn-arrow {
     display: flex;
     align-items: center;
     justify-content: center;

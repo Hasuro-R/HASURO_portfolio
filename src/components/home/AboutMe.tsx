@@ -2,6 +2,7 @@ import Link from 'next/link';
 import ReadMoreButton from '../UI/button/ReadMoreButton';
 import styles from './home.module.scss';
 import { profileIntroduction } from '@/lib/profile/profileIntroduction';
+import ReadMoreTextButton from '../UI/button/ReadMoreTextButton';
 
 export default function AboutMe() {
     const profile = profileIntroduction();
@@ -19,6 +20,9 @@ export default function AboutMe() {
                     return <span key={key}>{item}</span>
                 })}
             </div>
+            <Link href='/about'>
+                <ReadMoreTextButton text='Read More' />
+            </Link>
         </div>
     )
 }
