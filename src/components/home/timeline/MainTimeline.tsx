@@ -61,10 +61,7 @@ export default function MainTimeline() {
                         {array.item.map((item, key) => {
                             return (
                                 <TimelineBox
-                                    title={item.title}
-                                    date={item.date}
-                                    feature={item.feature}
-                                    kind={item.kind}
+                                    timelineData={item}
                                     number={key}
                                     end={array.item.length}
                                     key={key}
