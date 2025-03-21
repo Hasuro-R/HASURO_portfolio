@@ -1,12 +1,21 @@
-import { returnTech } from '@/lib/work/returnTech';
+'use client'
+
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { CgShapeCircle } from 'react-icons/cg';
+import { returnTech } from '@/lib/work/returnTech';
+import { timelineType } from '@/types/timelineType';
 import styles from './timeline.module.scss';
 
 export default function TimelineBox({
-    title, date, feature, kind, number, end,
+    timelineData, number, end,
 }: {
-    title: string, date: string, feature?: {url: string, description: string, techs: string[]}, kind: string, number: number, end: number,
+    timelineData: timelineType, number: number, end: number,
 }) {
+    const { id, title, date, feature, kind } = timelineData;
+
+    const [isActiveTimeline, setIsActiveTimeline] = useState(false);
+
     const isEnd = number === end - 1;
     let icon: string;
     let titleText: JSX.Element;
@@ -33,10 +42,23 @@ export default function TimelineBox({
     return (
         <div className={styles['timeline-box']}>
             <div className={styles[isEnd ? 'timeline-right-end' : 'timeline-right']} style={{paddingBottom: isEnd ? '0' : ''}}>
-                <div className={styles['timeline-icon']}>
+                <div
+                    className={styles['timeline-icon']}
+                    style={{ color: isActiveTimeline ? 'var(--primary-pink)' : '' }}
+                >
                     <CgShapeCircle />
                 </div>
-                <div className={styles['timeline-box-cn']}>
+                <motion.div
+                    className={styles['timeline-box-cn']}
+                    onMouseEnter={() => setIsActiveTimeline(true)}
+                    onHoverStart={() => setIsActiveTimeline(true)}
+                    onMouseLeave={() => setIsActiveTimeline(false)}
+                    onMouseUp={() => setIsActiveTimeline(false)}
+                    animate={isActiveTimeline ? {
+                        y: -10, boxShadow: '0 0 1px var(--primary-pink), 0 0 2px var(--primary-pink), 0 0 3px var(--primary-pink), 0 0 4px var(--primary-yellow)'
+                    } : {}}
+                    transition={{ duration: 0.3 }}
+                >
                     <div className={styles['timeline-box-title-cn']}>
                         <div className={styles['timeline-box-title-wr']}>
                             {icon}
@@ -70,7 +92,7 @@ export default function TimelineBox({
                         )}
                         </div>
                     )}
-                </div>
+                </motion.div>
             </div>
         </div>
     )

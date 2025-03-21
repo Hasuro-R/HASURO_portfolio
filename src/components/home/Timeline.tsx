@@ -45,10 +45,7 @@ function TimeLineSection({
         {timelines.map((item, key) => {
             return (
                 <TimelineBox
-                    title={item.title}
-                    date={item.date}
-                    feature={item.feature}
-                    kind={item.kind}
+                    timelineData={item}
                     number={key}
                     end={timelines.length}
                     key={key}

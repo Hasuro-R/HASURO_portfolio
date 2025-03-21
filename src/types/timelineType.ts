@@ -5,6 +5,7 @@ type timelineFeatureType = {
 };
 
 export type timelineType = {
+    id: number,
     title: string,
     feature: timelineFeatureType,
     year: string,
