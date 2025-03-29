@@ -14,6 +14,8 @@ export const returnTech = (tech: string) => {
             return {text: 'Astro', color: 'rgb(240, 134, 75)'};
         case 'flutter':
             return {text: 'Flutter', color: 'rgb(2, 86, 155)'};
+        case 'go':
+            return {text: 'Go', color: 'rgb(121, 212, 253)'};
         case 'prisma':
             return {text: 'Prisma', color: 'rgb(144, 198, 189)'};
         case 'swiftui':
