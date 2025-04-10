@@ -12,6 +12,8 @@ export const returnTech = (tech: string) => {
             return {text: 'React', color: 'rgb(151, 213, 238)'};
         case 'astro':
             return {text: 'Astro', color: 'rgb(240, 134, 75)'};
+        case 'nuxt':
+            return {text: 'Nuxt.js', color: 'rgb(40, 180, 130)'};
         case 'flutter':
             return {text: 'Flutter', color: 'rgb(2, 86, 155)'};
         case 'go':
