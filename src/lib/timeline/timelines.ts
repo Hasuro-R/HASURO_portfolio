@@ -2,7 +2,7 @@ import { timelineType } from "@/types/timelineType";
 
 export const timelines = <timelineType[]>[
     {id: 25, title: '42Tokyo', year: '2025', date: 'Apr ~', kind: 'other'},
-    {id: 28, title: 'note株式会社', feature: {url: '', description: 'エンジニアの長期インターン', techs: ['rails', 'next']}, year: '2025', date: 'Apr ~', kind: 'internship'},
+    {id: 28, title: 'note株式会社', feature: {url: '', description: 'エンジニアの長期インターン', techs: ['rails', 'next', 'nuxt']}, year: '2025', date: 'Apr ~', kind: 'internship'},
     {id: 27, title: 'Apple Vision Proハッカソン', feature: {url: '', description: 'MeltingHack主催のVisionProアプリ開発ハッカソンに出場\n空間マインドマップアプリを作成', techs: ['swiftui']}, year: '2025', date: 'Mar 23', kind: 'hackathon'},
     {id: 26, title: 'ピクシブ株式会社', feature: {url: 'https://booth.pm/ja', description: 'エンジニアの短期インターン', techs: ['rails', 'react']}, year: '2025', date: 'in Mar', kind: 'internship'},
     {id: 25, title: '42Tokyo Piscine受験', year: '2025', date: 'in Feb', kind: 'other'},
