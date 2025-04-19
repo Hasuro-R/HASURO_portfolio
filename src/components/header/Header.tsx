@@ -5,7 +5,13 @@ import MainIcon from '../account/MainIcon';
 import styles from './header.module.scss';
 
 export default function Header() {
-    const hostname = window?.location.hostname || '';
+    let name = 'HASURO';
+    if (typeof window !== 'undefined') {
+        const hostname = window.location.hostname;
+        if (hostname === 'inoren.me') {
+            name = 'いのれん';
+        }
+    }
 
     return (
         <div className={styles['top-account-container']}>
@@ -13,9 +19,7 @@ export default function Header() {
                 <div className={styles['top-account-icon-box']}>
                     <MainIcon />
                 </div>
-                <p className={styles['top-account-name']}>
-                    {hostname === 'inoren.me' ? 'いのれん' : 'HASURO'}
-                </p>
+                <p className={styles['top-account-name']}>{name}</p>
             </div>
             <div className={styles['top-account-container-right']}>
                 <AccountBoxes />
