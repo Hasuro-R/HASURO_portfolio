@@ -14,6 +14,8 @@ export const returnTech = (tech: string) => {
             return {text: 'Astro', color: 'rgb(240, 134, 75)'};
         case 'nuxt':
             return {text: 'Nuxt.js', color: 'rgb(40, 180, 130)'};
+        case 'svelte':
+            return {text: 'Svelte', color: 'rgb(240, 134, 75)'};
         case 'flutter':
             return {text: 'Flutter', color: 'rgb(2, 86, 155)'};
         case 'go':
@@ -21,7 +23,7 @@ export const returnTech = (tech: string) => {
         case 'prisma':
             return {text: 'Prisma', color: 'rgb(144, 198, 189)'};
         case 'swiftui':
-            return {text: 'SwiftUI', color: 'rgb(240, 134, 75)'};
+            return {text: 'SwiftUI', color: 'rgb(60, 140, 230)'};
         case 'firebase':
             return {text: 'Firebase', color: 'rgb(255, 226, 70)'};
         default:
