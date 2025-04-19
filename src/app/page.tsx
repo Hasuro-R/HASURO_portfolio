@@ -8,7 +8,7 @@ import TopIndex from '@/components/home/TopIndex'
 export default function Home() {
   return (
     <div className={styles['page-cn']}>
-      <Header title='HASURO' />
+      <Header />
       <TopIndex />
       <AboutMe />
       <Works />
