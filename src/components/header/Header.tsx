@@ -5,7 +5,7 @@ import MainIcon from '../account/MainIcon';
 import styles from './header.module.scss';
 
 export default function Header() {
-    const hostname = window.location.hostname;
+    const hostname = window?.location.hostname || '';
 
     return (
         <div className={styles['top-account-container']}>
