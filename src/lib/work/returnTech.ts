@@ -26,6 +26,10 @@ export const returnTech = (tech: string) => {
             return {text: 'SwiftUI', color: 'rgb(60, 140, 230)'};
         case 'firebase':
             return {text: 'Firebase', color: 'rgb(255, 226, 70)'};
+        case 'vite':
+            return {text: 'Vite', color: 'rgb(100, 108, 255)'};
+        case 'rsc':
+            return {text: 'RSC', color: 'rgb(103, 19, 210)'};
         default:
             return {text: tech, color: 'rgb(120, 140, 146)'}
     };
