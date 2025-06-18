@@ -1,3 +1,15 @@
+@mixin circle-btn($bg) {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 100vh;
+    background-color: $bg;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
 .more-button {
     display: flex;
     align-items: center;
@@ -52,4 +64,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.circle-btn-gray {
+    @include circle-btn(rgba(var(--color-gray-rgb), 0.2));
 }

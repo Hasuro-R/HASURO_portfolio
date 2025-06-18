@@ -3,9 +3,18 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiArrowRightCircle } from 'react-icons/fi';
+import { IoIosArrowForward } from 'react-icons/io';
 import styles from './button.module.scss';
 
-export default function ReadMoreButton() {
+export default function ReadMoreButton({ onClick } : { onClick?: () => void }) {
+    return (
+        <div className={styles['circle-btn-gray']} onClick={onClick}>
+            <IoIosArrowForward />
+        </div>
+    )
+}
+
+export function OldReadMoreButton() {
     const [isHover, setIsHover] = useState(false);
 
     const handleIsHover = () => {

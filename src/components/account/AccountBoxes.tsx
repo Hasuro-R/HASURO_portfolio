@@ -7,7 +7,7 @@ import { SiWantedly } from 'react-icons/si';
 
 export default function AccountBoxes() {
     return (
-        <div className={styles['account-box-container']}>
+        <div className={styles['account-box-cn']}>
             <a href='https://twitter.com/HASURO_dev' target='_blank' rel='noreferrer'>
                 <motion.div className={styles['twitter-box']}
                     whileHover={{ scale: 1.2 }}

@@ -1,16 +1,16 @@
-@mixin account-box($color, $hover) {
+@mixin account-box($color) {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0.4rem;
     border-radius: 0.8rem;
     font-size: 1.3rem;
-    border: 1px solid $color;
     color: $color;
+    background: color-mix(in srgb, $color 16%, transparent);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid color-mix(in srgb, $color 30%, transparent);
     cursor: pointer;
-    &:hover {
-        background-color: $hover;
-    }
     @media screen and (min-width: 500px) {
         font-size: 1.5rem;
         border-width: 2px;
@@ -60,7 +60,7 @@
 
 //AccountBoxes
 
-.account-box-container {
+.account-box-cn {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
@@ -71,19 +71,19 @@
 }
 
 .twitter-box {
-    @include account-box(rgb(0, 133, 171), rgba(0, 133, 171, 0.2));
+    @include account-box(rgb(0, 133, 171));
 }
 
 .github-box {
-    @include account-box(var(--text-color), var(--text-color-hover2));
+    @include account-box(var(--text-color));
 }
 
 .wantedly-box {
-    @include account-box(#89f7fe, var(--primary-green-hover));
+    @include account-box(#2fb8dd);
 }
 
 .instagram-box {
-    @include account-box(var(--primary-pink), var(--primary-pink-hover));
+    @include account-box(var(--primary-pink));
 }
 
 .none-link {
