@@ -78,6 +78,10 @@
     @include account-box(var(--text-color));
 }
 
+.linkedin-box {
+    @include account-box(#BA55D3);
+}
+
 .wantedly-box {
     @include account-box(#2fb8dd);
 }

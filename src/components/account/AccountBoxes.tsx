@@ -2,7 +2,7 @@
 
 import styles from './account.module.scss';
 import { motion } from 'framer-motion';
-import { FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { SiWantedly } from 'react-icons/si';
 
 export default function AccountBoxes() {
@@ -22,11 +22,11 @@ export default function AccountBoxes() {
                     <FaGithub />
                 </motion.div>
             </a>
-            <a href='https://www.wantedly.com/id/hasuro' target='_blank' rel='noreferrer'>
-                <motion.div className={styles['wantedly-box']}
+            <a href='https://www.linkedin.com/in/hasuro-304183321' target='_blank' rel='noreferrer'>
+                <motion.div className={styles['linkedin-box']}
                     whileHover={{ scale: 1.2 }}
                 >
-                    <SiWantedly />
+                    <FaLinkedinIn />
                 </motion.div>
             </a>
             {/* <a href='https://www.instagram.com/ren_hasuro/' target='_blank' className={styles['none-link']}>
