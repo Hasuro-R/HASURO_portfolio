@@ -2,16 +2,23 @@
   --primary-pink: rgb(234, 94, 127);
   --primary-yellow: rgb(255, 226, 70);
   --primary-orange: rgb(240, 134, 75);
-  --primary-gray: rgb(120, 140, 146);
+  --primary-gray: rgb(var(--color-gray-rgb));
+  --color-gray-rgb: 120, 140, 146;
+  --color-black-rgb: 0, 0, 0;
+  --color-white-rgb: 255, 255, 255;
 
   --primary-pink-hover: rgba(234, 94, 127, 0.2);
   --primary-yellow-hover: rgba(255, 226, 70, 0.2);
   --primary-orange-hover: rgba(240, 134, 75, 0.2);
   --primary-gray-hover: rgba(120, 140, 146, 0.4);
+
+  --z-index-float-btn: 100;
+  --z-index-float-btn-bg: 99;
 }
 
 :root[data-theme='light'] {
-  --text-color: rgb(64, 72, 85);
+  --text-color: rgb(var(--text-color-primary-rgb));
+  --text-color-primary-rgb: 64, 72, 85;
   --background-color: rgb(255, 255, 255);
   --background-color-through: rgba(255, 255, 255, 0.8);
 
@@ -24,7 +31,8 @@
 }
 
 :root[data-theme='dark'] {
-  --text-color: rgb(255, 255, 255);
+  --text-color: rgb(var(--text-color-primary-rgb));
+  --text-color-primary-rgb: 255, 255, 255;
   --background-color: rgb(64, 72, 85);
   --background-color-through: rgba(64, 72, 85, 0.8);
 
