@@ -1,13 +1,13 @@
 type timelineFeatureType = {
     url: string,
-    description: string,
+    descriptionKey: string,
     techs: string[],
 };
 
 export type timelineType = {
     id: number,
-    title: string,
-    feature: timelineFeatureType,
+    titleKey: string,
+    feature?: timelineFeatureType,
     year: string,
     date: string,
     kind: string,

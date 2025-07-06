@@ -1,0 +1,153 @@
+{
+  "aboutMe": {
+    "profile": "ものづくりが大好きな{{age}}歳\nNext.jsやRuby on Railsを用いたWeb開発から始め、現在はWebフロント・モバイル・バックエンドなど幅広い領域のエンジニアインターンに参加している\nアプリ開発したり、魚捌いたり、スイーツ作ったり、趣味は多岐にわたる\n人生のモットーは【楽しく生きる！！】"
+  },
+  "button": {
+    "readMore": "続きを読む"
+  },
+  "works": {
+    "aniSphere": {
+      "title": "AniSphere",
+      "description": "アニメ共有サイト"
+    },
+    "aniSphereAbout": {
+      "title": "AniSphere About",
+      "description": "アニメ共有サイトのAboutページ"
+    },
+    "portfolio": {
+      "title": "portfolio",
+      "description": "このサイト"
+    },
+    "hasuroG": {
+      "title": "HASUROG",
+      "description": "HASUROのブログ"
+    },
+    "morihinako": {
+      "title": "森日向子 OfficialSite",
+      "description": "森日向子さんの公式サイト"
+    },
+    "fwt": {
+      "title": "Futurealize with Tech!",
+      "description": "ライフイズテックの卒業企画"
+    },
+    "rsc": {
+      "title": "React Slide Craft",
+      "description": "スライドを作成できるReactパッケージ"
+    },
+    "slides": {
+      "title": "slide集",
+      "description": "ReactSlideCraftで作ったスライド集"
+    }
+  },
+  "timelines": {
+    "reactSlideCraft": {
+      "title": "ReactSlideCraft",
+      "description": "Reactで簡単にスライドを作れるReactライブラリ"
+    },
+    "42tokyo": {
+      "title": "42Tokyo"
+    },
+    "noteInc": {
+      "title": "note株式会社",
+      "description": "エンジニアの長期インターン"
+    },
+    "visionProHackathon": {
+      "title": "Apple Vision Proハッカソン",
+      "description": "MeltingHack主催のVisionProアプリ開発ハッカソンに出場\n空間マインドマップアプリを作成"
+    },
+    "pixivInc": {
+      "title": "ピクシブ株式会社",
+      "description": "エンジニアの短期インターン"
+    },
+    "42tokyoPiscine": {
+      "title": "42Tokyo Piscine受験"
+    },
+    "blogVimCommands": {
+      "title": "blog.hasuro.com",
+      "description": "Vimを使おう！初めに覚えた方が良いVimコマンド集"
+    },
+    "blogGraphQL": {
+      "title": "blog.hasuro.com",
+      "description": "個人開発でもGraphQL良きです"
+    },
+    "iroriInc": {
+      "title": "株式会社イロリ",
+      "description": "モバイル・バックエンドエンジニアの長期インターン"
+    },
+    "caTechLounge": {
+      "title": "CA Tech Lounge"
+    },
+    "openHackUOsaka": {
+      "title": "Open Hack U Osaka",
+      "description": "LINEヤフー株式会社主催のハッカソンに出場\n近未来型鬼ごっこアプリを開発"
+    },
+    "allesgoodInc": {
+      "title": "株式会社アレスグッド",
+      "description": "フロントエンド・バックエンドエンジニアの長期インターン"
+    },
+    "yumemiInc": {
+      "title": "株式会社ゆめみ",
+      "description": "サーバーサイド 1Dayインターン"
+    },
+    "futuralizeWithTech": {
+      "title": "Futurealize with Tech!",
+      "description": "ライフイズテックでの卒業メンバー4人の全国企画\n全国から卒業メンターさんへメッセージを集めるサービスを作成"
+    },
+    "blogFlutter": {
+      "title": "blog.hasuro.com",
+      "description": "Flutter開発でのトピック"
+    },
+    "rubyProcon": {
+      "title": "中高生国際Rubyプログラミングコンテスト",
+      "description": "・ソニックガーデン賞\n・Matz賞\n・審査員特別賞"
+    },
+    "appKoshienCygames": {
+      "title": "アプリ甲子園2023 Cygames賞"
+    },
+    "morihinakoSite": {
+      "title": "森日向子 OfficialSite",
+      "description": "森 日向子さんの公式サイト。\nスクロールアニメーションやってみました。"
+    },
+    "blogAstro": {
+      "title": "blog.hasuro.com",
+      "description": "Astro使ってブログ作ってみた話"
+    },
+    "hasurog": {
+      "title": "HASUROG",
+      "description": "HASURO（私）のブログ。\nAstroを使ってみました。"
+    },
+    "thisPortfolio": {
+      "title": "this portfolio",
+      "description": "HASURO（私）のポートフォリオ。\nテーマカラー変更やアルバムのUIに力を入れたシンプルなサイト"
+    },
+    "anisphereUsers50": {
+      "title": "AniSphereユーザー数50人突破!!"
+    },
+    "startedFlutter": {
+      "title": "Started leaning Flutter"
+    },
+    "torontoStudy": {
+      "title": "トロント留学 🇨🇦"
+    },
+    "anisphereAbout": {
+      "title": "AniSphere AboutPage",
+      "description": "AniSphereのAboutページ。\n表示の際のアニメーションをこだわった。"
+    },
+    "anisphere": {
+      "title": "AniSphere",
+      "description": "アニメ共有サイト。\nアニメ評価サイトとSNSを掛け合わせた、新しいサービス。"
+    },
+    "startedNextjs": {
+      "title": "Started leaning Next.js"
+    },
+    "startedReact": {
+      "title": "Started leaning React"
+    },
+    "startedRubyHtmlCss": {
+      "title": "Started leaning Ruby・HTML・CSS"
+    },
+    "startedProgramming": {
+      "title": "Started programming"
+    }
+  }
+}

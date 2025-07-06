@@ -1,27 +1,30 @@
 import { works } from '@/lib/work/works';
 import styles from './home.module.scss';
 import WorkBox from '../work/WorkBox';
+import { getServerTranslations } from '@/lib/i18n';
 
-export default function Works() {
-    return (
-        <div className={styles['container']}>
-            <div className={styles['title-container']}>
-                <p className={styles['title']}>Works</p>
-            </div>
-            <div className={styles['works-container']}>
-            {works.map((item, key) => {
-                return (
-                    <WorkBox
-                        title={item.title}
-                        image={item.image}
-                        url={item.url}
-                        description={item.description}
-                        techs={item.techs}
-                        key={key}
-                    />
-                )
-            })}
-            </div>
-        </div>
-    );
+export default async function Works() {
+  const t = await getServerTranslations();
+
+  return (
+    <div className={styles['container']}>
+      <div className={styles['title-container']}>
+        <p className={styles['title']}>Works</p>
+      </div>
+      <div className={styles['works-container']}>
+      {works.map((item, key) => {
+        return (
+          <WorkBox
+            title={t(item.titleKey)}
+            image={item.image}
+            url={item.url}
+            description={t(item.descriptionKey)}
+            techs={item.techs}
+            key={key}
+          />
+        )
+      })}
+      </div>
+    </div>
+  );
 }

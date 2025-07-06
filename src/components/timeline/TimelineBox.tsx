@@ -1,10 +1,11 @@
 'use client'
 
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { motion } from 'framer-motion';
 import { CgShapeCircle } from 'react-icons/cg';
 import { returnTech } from '@/lib/work/returnTech';
 import { timelineType } from '@/types/timelineType';
+import { useI18n } from '@/hooks/useI18n';
 import styles from './timeline.module.scss';
 
 export default function TimelineBox({
@@ -12,11 +13,13 @@ export default function TimelineBox({
 }: {
     timelineData: timelineType, number: number, end: number,
 }) {
-    const { id, title, date, feature, kind } = timelineData;
+    const t = useI18n();
+    const { id, titleKey, date, feature, kind } = timelineData;
 
     const [isActiveTimeline, setIsActiveTimeline] = useState(false);
 
     const isEnd = number === end - 1;
+    const title = t(titleKey);
     let icon: string;
     let titleText: JSX.Element;
     if (kind === 'released') {
@@ -69,7 +72,7 @@ export default function TimelineBox({
                     {feature && (
                         <div className={styles['timeline-box-feature-cn']}>
                         <div>
-                            {feature.description.split('\n').map((item, key) => {
+                            {t(feature.descriptionKey).split('\n').map((item, key) => {
                                 return (
                                     <p className={styles['feature-box-text']} key={key}>{item}</p>
                                 )

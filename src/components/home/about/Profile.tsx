@@ -1,8 +1,8 @@
 import { profileIntroduction } from '@/lib/profile/profileIntroduction';
 import styles from '../home.module.scss';
 
-export default function Profile() {
-    const profile = profileIntroduction();
+export default async function Profile() {
+    const profile = await profileIntroduction();
 
     return (
         <div className={styles['container']}>

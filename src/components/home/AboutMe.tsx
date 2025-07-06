@@ -3,8 +3,8 @@ import ReadMoreButton from '../UI/button/ReadMoreButton';
 import styles from './home.module.scss';
 import { profileIntroduction } from '@/lib/profile/profileIntroduction';
 
-export default function AboutMe() {
-    const profile = profileIntroduction();
+export default async function AboutMe() {
+    const profile = await profileIntroduction();
 
     return (
         <div className={styles['container']}>

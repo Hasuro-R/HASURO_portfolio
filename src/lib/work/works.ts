@@ -8,12 +8,12 @@ import RSCImage from '@/public/work/rsc_ogp.png';
 import HASUROSlidesImage from '@/public/work/hasuro_slides_ogp.png';
 
 export const works = [
-    {title: 'AniSphere', image: anisphereImage, url: 'https://anisphere.jp', description: 'アニメ共有サイト', techs: ['next', 'rails']},
-    {title: 'AniSphere About', image: anisphereAboutImage, url: 'https://about.anisphere.jp', description: 'アニメ共有サイトのAboutページ', techs: ['next']},
-    {title: 'portfolio', image: portfolioImage, url: '', description: 'このサイト', techs: ['next']},
-    {title: 'HASUROG', image: HASUROGImage, url: 'https://blog.hasuro.com', description: 'HASUROのブログ', techs: ['astro','react']},
-    {title: '森日向子 OfficialSite', image: morihinakoImage, url: 'https://mori-hinako.com', description: '森日向子さんの公式サイト', techs: ['next']},
-    {title: 'Futurealize with Tech!', image: fwtImage, url: 'https://github.com/Futurealize-with-Tech', description: 'ライフイズテックの卒業企画', techs: ['next', 'prisma']},
-    {title: 'React Slide Craft', image: RSCImage, url: 'https://github.com/Hasuro-R/react-slide-craft', description: 'スライドを作成できるReactパッケージ', techs: ['react', 'vite']},
-    {title: 'slide集', image: HASUROSlidesImage, url: 'https://slides.hasuro.com', description: 'ReactSlideCraftで作ったスライド集', techs: ['next', 'react', 'rsc']},
+    {titleKey: 'works.aniSphere.title', image: anisphereImage, url: 'https://anisphere.jp', descriptionKey: 'works.aniSphere.description', techs: ['next', 'rails']},
+    {titleKey: 'works.aniSphereAbout.title', image: anisphereAboutImage, url: 'https://about.anisphere.jp', descriptionKey: 'works.aniSphereAbout.description', techs: ['next']},
+    {titleKey: 'works.portfolio.title', image: portfolioImage, url: '', descriptionKey: 'works.portfolio.description', techs: ['next']},
+    {titleKey: 'works.hasuroG.title', image: HASUROGImage, url: 'https://blog.hasuro.com', descriptionKey: 'works.hasuroG.description', techs: ['astro','react']},
+    {titleKey: 'works.morihinako.title', image: morihinakoImage, url: 'https://mori-hinako.com', descriptionKey: 'works.morihinako.description', techs: ['next']},
+    {titleKey: 'works.fwt.title', image: fwtImage, url: 'https://github.com/Futurealize-with-Tech', descriptionKey: 'works.fwt.description', techs: ['next', 'prisma']},
+    {titleKey: 'works.rsc.title', image: RSCImage, url: 'https://github.com/Hasuro-R/react-slide-craft', descriptionKey: 'works.rsc.description', techs: ['react', 'vite']},
+    {titleKey: 'works.slides.title', image: HASUROSlidesImage, url: 'https://slides.hasuro.com', descriptionKey: 'works.slides.description', techs: ['next', 'react', 'rsc']},
 ];
