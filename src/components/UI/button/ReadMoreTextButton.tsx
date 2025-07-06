@@ -1,23 +1,23 @@
 'use client'
 
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { FiArrowRight } from 'react-icons/fi';
-import styles from './button.module.scss';
-import { useI18n } from '@/hooks/useI18n';
+import { motion } from 'framer-motion'
+import { useState } from 'react'
+import { FiArrowRight } from 'react-icons/fi'
+import { useI18n } from '@/hooks/useI18n'
+import styles from './button.module.scss'
 
-export default function ReadMoreTextButton({ text } : { text: string }) {
-  const t = useI18n();
+export default function ReadMoreTextButton({ text }: { text: string }) {
+  const t = useI18n()
 
-  const [isHover, setIsHover] = useState(false);
+  const [isHover, setIsHover] = useState(false)
 
   const handleIsHover = () => {
-    setIsHover(true);
-  };
+    setIsHover(true)
+  }
 
   const handleUnIsHover = () => {
-    setIsHover(false);
-  };
+    setIsHover(false)
+  }
 
   return (
     <div className={styles['more-text-btn']}>
@@ -36,5 +36,5 @@ export default function ReadMoreTextButton({ text } : { text: string }) {
         </motion.div>
       </motion.div>
     </div>
-  );
+  )
 }

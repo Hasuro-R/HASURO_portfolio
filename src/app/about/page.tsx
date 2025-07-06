@@ -1,32 +1,31 @@
-import { Metadata } from 'next';
-import Profile from '@/components/home/about/Profile';
-import Albums from '@/components/home/about/Albums';
-import Contact from '@/components/home/about/Contact';
-import SubHeader from '@/components/header/SubHeader';
-import styles from '../page.module.scss';
+import type { Metadata } from 'next'
+import SubHeader from '@/components/header/SubHeader'
+import Albums from '@/components/home/about/Albums'
+import Contact from '@/components/home/about/Contact'
+import Profile from '@/components/home/about/Profile'
+import styles from '../page.module.scss'
 
 export const metadata: Metadata = {
+  title: 'About me',
+  description: 'HASUROのAbout me',
+  openGraph: {
     title: 'About me',
     description: 'HASUROのAbout me',
-    openGraph: {
-        title: 'About me',
-        description: 'HASUROのAbout me',
-    },
-    twitter: {
-        card: 'summary',
-        title: 'About me',
-        description: 'HASUROのAbout me',
-    },
+  },
+  twitter: {
+    card: 'summary',
+    title: 'About me',
+    description: 'HASUROのAbout me',
+  },
 }
 
 export default function AboutPage() {
-
-    return (
-        <div className={styles['page-cn']}>
-            <SubHeader title='About me' />
-            <Profile />
-            <Albums />
-            <Contact />
-        </div>
-    );
+  return (
+    <div className={styles['page-cn']}>
+      <SubHeader title="About me" />
+      <Profile />
+      <Albums />
+      <Contact />
+    </div>
+  )
 }

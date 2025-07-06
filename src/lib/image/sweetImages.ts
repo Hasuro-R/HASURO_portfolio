@@ -1,19 +1,19 @@
-import appleTart from '@/public/album/sweet/apple_tart.webp';
-import bakedChocolateCake from '@/public/album/sweet/baked_chocolate_cake.webp';
-import cannere from '@/public/album/sweet/cannere.webp';
-import carafulCannere from '@/public/album/sweet/caraful_cannere.webp';
-import carafulCannereSideway from '@/public/album/sweet/caraful_cannere_sideway.webp';
-import chocolateCake from '@/public/album/sweet/chocorate_cake.webp';
-import firstConan from '@/public/album/sweet/first_conan.webp';
-import lemonCake from '@/public/album/sweet/lemon_cake.webp';
-import opera from '@/public/album/sweet/opera.webp';
-import sachertorte from '@/public/album/sweet/sachertorte.webp';
-import tarttatan from '@/public/album/sweet/tarttatan.webp';
-import snowman from '@/public/album/sweet/snowman.webp';
-import wornatCake from '@/public/album/sweet/wornat_cake.webp';
-import milkCrepe from '@/public/album/sweet/milk_crepe.webp';
-import peachTart from '@/public/album/sweet/peach_tart.webp';
-import creamPuff from '@/public/album/sweet/cream_puff.webp';
+import appleTart from '@/public/album/sweet/apple_tart.webp'
+import bakedChocolateCake from '@/public/album/sweet/baked_chocolate_cake.webp'
+import cannere from '@/public/album/sweet/cannere.webp'
+import carafulCannere from '@/public/album/sweet/caraful_cannere.webp'
+import carafulCannereSideway from '@/public/album/sweet/caraful_cannere_sideway.webp'
+import chocolateCake from '@/public/album/sweet/chocorate_cake.webp'
+import creamPuff from '@/public/album/sweet/cream_puff.webp'
+import firstConan from '@/public/album/sweet/first_conan.webp'
+import lemonCake from '@/public/album/sweet/lemon_cake.webp'
+import milkCrepe from '@/public/album/sweet/milk_crepe.webp'
+import opera from '@/public/album/sweet/opera.webp'
+import peachTart from '@/public/album/sweet/peach_tart.webp'
+import sachertorte from '@/public/album/sweet/sachertorte.webp'
+import snowman from '@/public/album/sweet/snowman.webp'
+import tarttatan from '@/public/album/sweet/tarttatan.webp'
+import wornatCake from '@/public/album/sweet/wornat_cake.webp'
 
 export const sweetImages = [
   { image: carafulCannere, alt: 'caraful cannere' },
@@ -32,6 +32,6 @@ export const sweetImages = [
   { image: snowman, alt: 'snowman cake' },
   { image: peachTart, alt: 'peach tart' },
   { image: creamPuff, alt: 'cream puff' },
-];
+]
 
-export const firstSweetImages = sweetImages.slice(0, 4);
+export const firstSweetImages = sweetImages.slice(0, 4)

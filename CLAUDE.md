@@ -17,6 +17,12 @@ npm run start
 
 # Linting
 npm run lint
+
+# Code Formatting with Biome
+npm run format              # Format all files
+npm run format:check        # Check formatting without changes
+npm run biome:check         # Run all Biome checks (linting + formatting)
+npm run biome:fix           # Fix auto-fixable issues
 ```
 
 ## Architecture Overview
@@ -78,6 +84,12 @@ Interactive photo galleries with three categories:
 ### Port Configuration
 - Development and production servers run on port 3010
 - Configured in package.json scripts
+
+### Code Formatting & Linting
+- **Biome**: Fast formatter and linter for JavaScript/TypeScript
+- **Configuration**: `biome.json` with space-based indentation (2 spaces)
+- **Style**: Single quotes, semicolons, ES5 trailing commas
+- **Integration**: Git-aware, ignores build directories automatically
 
 ## Current Development Status
 - Active branch: `feature/create-l18n-#49` (internationalization implementation)

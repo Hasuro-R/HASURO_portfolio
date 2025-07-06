@@ -3,15 +3,15 @@ import './globals.scss'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { cookies } from 'next/headers'
-import { localKey } from '@/lib/key'
 import Footer from '@/components/footer/Footer'
+import { localKey } from '@/lib/key'
 import I18nProvider from '@/middleware/I18nProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const siteName = 'HASURO';
-const description = 'HASUROのポートフォリオです。';
-const url = 'https://hasuro.com';
+const siteName = 'HASURO'
+const description = 'HASUROのポートフォリオです。'
+const url = 'https://hasuro.com'
 
 export const metadata: Metadata = {
   title: {
@@ -47,20 +47,20 @@ export const metadata: Metadata = {
   alternates: {
     canonical: url,
   },
-};
+}
 
 export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  const cookieStore = await cookies();
-  const locale = cookieStore.get(localKey)?.value ?? 'en';
+  const cookieStore = await cookies()
+  const locale = cookieStore.get(localKey)?.value ?? 'en'
 
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        <div className='all-container'>
+        <div className="all-container">
           <ColorThemeProvider>
             <I18nProvider>
               {children}
@@ -70,5 +70,5 @@ export default async function RootLayout({
         </div>
       </body>
     </html>
-  );
+  )
 }
