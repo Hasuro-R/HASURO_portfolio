@@ -2,7 +2,10 @@ import ColorThemeProvider from '@/middleware/ColorThemeProvider'
 import './globals.scss'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { cookies } from 'next/headers'
+import { localKey } from '@/lib/key'
 import Footer from '@/components/footer/Footer'
+import I18nProvider from '@/middleware/I18nProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -46,18 +49,23 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const cookieStore = await cookies();
+  const locale = cookieStore.get(localKey)?.value ?? 'en';
+
   return (
-    <html lang="ja">
+    <html lang={locale}>
       <body className={inter.className}>
         <div className='all-container'>
           <ColorThemeProvider>
-            {children}
-            <Footer />
+            <I18nProvider>
+              {children}
+              <Footer />
+            </I18nProvider>
           </ColorThemeProvider>
         </div>
       </body>

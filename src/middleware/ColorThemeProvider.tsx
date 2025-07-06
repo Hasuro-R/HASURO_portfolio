@@ -1,13 +1,14 @@
 'use client'
 
 import { colorThemeKey } from "@/lib/key";
-import { createContext, useEffect, useState } from "react"
+import { createContext, useEffect, useState } from "react";
 
-type colorThemeContextType = {
+type ColorThemeContextType = {
     theme: string,
     setTheme: any,
 };
-export const ColorThemeContext = createContext<colorThemeContextType>({
+
+export const ColorThemeContext = createContext<ColorThemeContextType>({
     theme: "",
     setTheme: undefined
 });

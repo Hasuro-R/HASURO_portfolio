@@ -1,0 +1,153 @@
+{
+  "aboutMe": {
+    "profile": "A 19-year-old who loves creating things.\nStarted out with web development using Next.js and Ruby on Rails, and is now participating in a wide range of engineering internships—from web frontend to mobile and backend development.\nWhether it's building apps, filleting fish, or making sweets, I have a wide variety of hobbies.\nMy life motto is: 'Live joyfully!!'"
+  },
+  "button": {
+    "readMore": "Read More"
+  },
+  "works": {
+    "aniSphere": {
+      "title": "AniSphere",
+      "description": "Anime sharing service"
+    },
+    "aniSphereAbout": {
+      "title": "AniSphere About",
+      "description": "About page for AniSphere"
+    },
+    "portfolio": {
+      "title": "portfolio",
+      "description": "This site"
+    },
+    "hasuroG": {
+      "title": "HASUROG",
+      "description": "HASURO's blog"
+    },
+    "morihinako": {
+      "title": "Mori Hinako OfficialSite",
+      "description": "Official site for Mori Hinako"
+    },
+    "fwt": {
+      "title": "Futurealize with Tech!",
+      "description": "Life is Tech! graduation project"
+    },
+    "rsc": {
+      "title": "React Slide Craft",
+      "description": "React package for creating slides"
+    },
+    "slides": {
+      "title": "Slide collection",
+      "description": "Collection of slides made with ReactSlideCraft"
+    }
+  },
+  "timelines": {
+    "reactSlideCraft": {
+      "title": "ReactSlideCraft",
+      "description": "React library for easily creating slides with React"
+    },
+    "42tokyo": {
+      "title": "42Tokyo"
+    },
+    "noteInc": {
+      "title": "note Inc.",
+      "description": "Long-term engineering internship"
+    },
+    "visionProHackathon": {
+      "title": "Apple Vision Pro Hackathon",
+      "description": "Participated in MeltingHack's VisionPro app development hackathon\nCreated a spatial mind mapping app"
+    },
+    "pixivInc": {
+      "title": "pixiv Inc.",
+      "description": "Short-term engineering internship"
+    },
+    "42tokyoPiscine": {
+      "title": "42Tokyo Piscine Exam"
+    },
+    "blogVimCommands": {
+      "title": "blog.hasuro.com",
+      "description": "Let's use Vim! Essential Vim commands to learn first"
+    },
+    "blogGraphQL": {
+      "title": "blog.hasuro.com",
+      "description": "GraphQL is great for personal development too"
+    },
+    "iroriInc": {
+      "title": "IRORI Inc.",
+      "description": "Long-term mobile & backend engineering internship"
+    },
+    "caTechLounge": {
+      "title": "CA Tech Lounge"
+    },
+    "openHackUOsaka": {
+      "title": "Open Hack U Osaka",
+      "description": "Participated in LY Corporation's hackathon\nDeveloped a futuristic tag game app"
+    },
+    "allesgoodInc": {
+      "title": "allesgood Inc.",
+      "description": "Long-term frontend & backend engineering internship"
+    },
+    "yumemiInc": {
+      "title": "YUMEMI Inc.",
+      "description": "Server-side 1-day internship"
+    },
+    "futuralizeWithTech": {
+      "title": "Futurealize with Tech!",
+      "description": "Nationwide project by 4 Life is Tech graduation members\nCreated a service to collect messages from mentors nationwide"
+    },
+    "blogFlutter": {
+      "title": "blog.hasuro.com",
+      "description": "Topics on Flutter development"
+    },
+    "rubyProcon": {
+      "title": "International Ruby Programming Contest for High School Students",
+      "description": "• SonicGarden Award\n• Matz Award\n• Special Judge Award"
+    },
+    "appKoshienCygames": {
+      "title": "TEENS APPS AWARDS 2023 Cygames Award"
+    },
+    "morihinakoSite": {
+      "title": "Mori Hinako Official Site",
+      "description": "Official site for Mori Hinako.\nTried implementing scroll animations."
+    },
+    "blogAstro": {
+      "title": "blog.hasuro.com",
+      "description": "Story about creating a blog with Astro"
+    },
+    "hasurog": {
+      "title": "HASUROG",
+      "description": "HASURO's (my) blog.\nTried using Astro."
+    },
+    "thisPortfolio": {
+      "title": "this portfolio",
+      "description": "HASURO's (my) portfolio.\nA simple site with focus on theme color changes and album UI"
+    },
+    "anisphereUsers50": {
+      "title": "AniSphere reached 50 users!!"
+    },
+    "startedFlutter": {
+      "title": "Started learning Flutter"
+    },
+    "torontoStudy": {
+      "title": "Toronto Study Abroad 🇨🇦"
+    },
+    "anisphereAbout": {
+      "title": "AniSphere AboutPage",
+      "description": "About page for AniSphere.\nPaid attention to display animations."
+    },
+    "anisphere": {
+      "title": "AniSphere",
+      "description": "Anime sharing site.\nA new service combining anime rating site and SNS."
+    },
+    "startedNextjs": {
+      "title": "Started learning Next.js"
+    },
+    "startedReact": {
+      "title": "Started learning React"
+    },
+    "startedRubyHtmlCss": {
+      "title": "Started learning Ruby・HTML・CSS"
+    },
+    "startedProgramming": {
+      "title": "Started programming"
+    }
+  }
+}
