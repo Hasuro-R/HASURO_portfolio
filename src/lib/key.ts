@@ -1,2 +1,2 @@
-export const colorThemeKey = 'colorThemeState';
-export const localKey = 'NEXT_LOCAL';
+export const colorThemeKey = 'colorThemeState'
+export const localKey = 'NEXT_LOCAL'

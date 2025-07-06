@@ -1,16 +1,16 @@
-'use client';
+'use client'
 
-import AccountBoxes from '../account/AccountBoxes';
-import MainIcon from '../account/MainIcon';
-import styles from './header.module.scss';
+import AccountBoxes from '../account/AccountBoxes'
+import MainIcon from '../account/MainIcon'
+import styles from './header.module.scss'
 
 export default function Header() {
-  let name = 'HASURO';
+  let name = 'HASURO'
 
   if (typeof window !== 'undefined') {
-    const hostname = window.location.hostname;
+    const hostname = window.location.hostname
     if (hostname === 'inoren.me') {
-      name = 'いのれん';
+      name = 'いのれん'
     }
   }
 
