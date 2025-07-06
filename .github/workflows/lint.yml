@@ -27,6 +27,3 @@ jobs:
 
     - name: Run Biome lint
       run: npm run biome:check
-
-    - name: Run Biome format check
-      run: npm run format:check
