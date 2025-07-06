@@ -1,15 +1,6 @@
 import { locals, LocalType } from "@/types/localType";
 
-// 文字列置換のための型定義
 export type TranslationParams = Record<string, string | number>;
-
-// プレースホルダーを置換する関数
-function replacePlaceholders(template: string, params: TranslationParams = {}): string {
-  return template.replace(/\{\{(\w+)\}\}/g, (match, key) => {
-    const value = params[key];
-    return value !== undefined ? String(value) : match;
-  });
-}
 
 // クライアントコンポーネント用の翻訳データ取得
 export function getTranslationData(locale: string) {
@@ -50,4 +41,12 @@ export function createTranslationFunction(locale: string) {
 
     return key;
   };
+}
+
+// プレースホルダーを置換する関数
+function replacePlaceholders(template: string, params: TranslationParams = {}): string {
+  return template.replace(/\{\{(\w+)\}\}/g, (match, key) => {
+    const value = params[key];
+    return value !== undefined ? String(value) : match;
+  });
 }

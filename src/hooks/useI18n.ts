@@ -1,13 +1,15 @@
 import { useMemo } from "react";
 import { createTranslationFunction, TranslationParams } from "@/lib/i18n-client";
+import { useLocal } from "./useLocal";
 
-export function useI18n(locale: string) {
+export function useI18n() {
+  const { local } = useLocal();
+
   const t = useMemo(() => {
-    return createTranslationFunction(locale);
-  }, [locale]);
+    return createTranslationFunction(local);
+  }, [local]);
 
   return t;
 }
 
-// 型をエクスポート
 export type { TranslationParams };

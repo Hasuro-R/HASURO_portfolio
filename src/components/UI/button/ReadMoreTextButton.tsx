@@ -5,11 +5,9 @@ import { motion } from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi';
 import styles from './button.module.scss';
 import { useI18n } from '@/hooks/useI18n';
-import { useLocal } from '@/hooks/useLocal';
 
 export default function ReadMoreTextButton({ text } : { text: string }) {
-  const { local } = useLocal();
-  const t = useI18n(local);
+  const t = useI18n();
 
   const [isHover, setIsHover] = useState(false);
 

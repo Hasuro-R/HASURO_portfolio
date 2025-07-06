@@ -6,7 +6,6 @@ import { CgShapeCircle } from 'react-icons/cg';
 import { returnTech } from '@/lib/work/returnTech';
 import { timelineType } from '@/types/timelineType';
 import { useI18n } from '@/hooks/useI18n';
-import { I18nProviderContext } from '@/middleware/I18nProvider';
 import styles from './timeline.module.scss';
 
 export default function TimelineBox({
@@ -14,8 +13,7 @@ export default function TimelineBox({
 }: {
     timelineData: timelineType, number: number, end: number,
 }) {
-    const { local } = useContext(I18nProviderContext);
-    const t = useI18n(local || 'en');
+    const t = useI18n();
     const { id, titleKey, date, feature, kind } = timelineData;
 
     const [isActiveTimeline, setIsActiveTimeline] = useState(false);
