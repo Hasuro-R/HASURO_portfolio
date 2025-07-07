@@ -163,12 +163,13 @@
     gap: 0.8rem;
     padding: 0.2rem;
     background: rgba(var(--color-white-rgb), 0.25);
-    box-shadow: 0 4px 20px rgba(var(--color-black-rgb), 0.1);
+    box-shadow: 0 1px 8px rgba(var(--color-black-rgb), 0.1);
     backdrop-filter: blur(15px) saturate(150%);
     -webkit-backdrop-filter: blur(15px) saturate(150%);
     border: 1px solid rgba(var(--color-white-rgb), 0.2);
     border-radius: 100vh;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .category-meta-cn {
@@ -186,6 +187,8 @@
     gap: 0.5rem;
     padding: 0.3rem 0.8rem;
     border-radius: 100vh;
+    font-weight: 600;
+    color: rgb(var(--color-white-rgb));
 }
 
 .focus {
@@ -224,6 +227,13 @@
     gap: 0.5rem;
     padding: 0.3rem 0.8rem;
     border-radius: 100vh;
+    font-weight: 600;
+    color: rgb(var(--color-white-rgb));
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    &:hover {
+        background: rgba(var(--color-white-rgb), 0.25);
+    }
 }
 
 .category-box-cushion {
@@ -245,8 +255,9 @@
 }
 
 .category-text {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 600;
+    color: rgb(var(--color-white-rgb));
 }
 
 .category-change-arrow {
@@ -255,12 +266,23 @@
     justify-content: center;
     border-radius: 100vh;
     font-size: 1.1rem;
+    color: rgb(var(--color-white-rgb));
+    opacity: 0.7;
     &:hover {
-        background-color: rgba(183, 183, 182, 0.2);
+        background-color: rgba(var(--color-white-rgb), 0.1);
     }
 }
 
 //category menu
+
+// ダークテーマ対応
+[data-theme="light"] {
+    .category-cn {
+        background: rgba(var(--color-black-rgb, 0, 0, 0), 0.4);
+        border: 1px solid rgba(var(--color-white-rgb, 255, 255, 255), 0.1);
+        box-shadow: 0 4px 20px rgba(var(--color-black-rgb, 0, 0, 0), 0.3);
+    }
+}
 
 .category-menu-container {
     position: absolute;

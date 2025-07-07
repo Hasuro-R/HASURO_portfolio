@@ -5,6 +5,9 @@
   "button": {
     "readMore": "Read More"
   },
+  "menu": {
+    "selectLanguage": "Select Language"
+  },
   "works": {
     "aniSphere": {
       "title": "AniSphere",

@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { cookies } from 'next/headers'
 import Footer from '@/components/footer/Footer'
+import HoverMenu from '@/components/UI/menu/HoverMenu'
 import { localKey } from '@/lib/key'
 import I18nProvider from '@/middleware/I18nProvider'
 
@@ -65,6 +66,7 @@ export default async function RootLayout({
             <I18nProvider>
               {children}
               <Footer />
+              <HoverMenu />
             </I18nProvider>
           </ColorThemeProvider>
         </div>

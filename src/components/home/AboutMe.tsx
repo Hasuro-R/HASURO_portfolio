@@ -7,7 +7,7 @@ export default async function AboutMe() {
   const profile = await profileIntroduction()
 
   return (
-    <div className={styles.container}>
+    <section id="about" className={styles.container}>
       <div className={styles['title-container']}>
         <p className={styles.title}>About me</p>
         <Link href="/about">
@@ -19,6 +19,6 @@ export default async function AboutMe() {
           return <span key={key}>{item}</span>
         })}
       </div>
-    </div>
+    </section>
   )
 }

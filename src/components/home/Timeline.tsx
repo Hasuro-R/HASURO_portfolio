@@ -12,7 +12,7 @@ export default function Timeline() {
   const timeline25 = topTimelines.filter((timeline) => timeline.year === '2025')
 
   return (
-    <div className={styles.container}>
+    <section id="timeline" className={styles.container}>
       <div className={styles['title-container']}>
         <p className={styles.title}>Timeline</p>
         <Link href="/timeline">
@@ -27,7 +27,7 @@ export default function Timeline() {
           <ReadMoreTextButton text="もっと詳しく見る" />
         </Link>
       </div>
-    </div>
+    </section>
   )
 }
 

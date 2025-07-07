@@ -7,7 +7,7 @@ export default async function Works() {
   const t = await getServerTranslations()
 
   return (
-    <div className={styles.container}>
+    <section id="works" className={styles.container}>
       <div className={styles['title-container']}>
         <p className={styles.title}>Works</p>
       </div>
@@ -25,6 +25,6 @@ export default async function Works() {
           )
         })}
       </div>
-    </div>
+    </section>
   )
 }

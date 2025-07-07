@@ -38,7 +38,7 @@ export default function ColorThemeProvider({
       root.setAttribute('data-theme', 'dark')
       setTheme('dark')
     }
-  }, [])
+  }, [theme])
 
   return (
     <ColorThemeContext.Provider value={{ theme, setTheme }}>
