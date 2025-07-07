@@ -287,7 +287,9 @@ export default function HoverMenu() {
                     >
                       <HiArrowLeft />
                     </button>
-                    <span className={styles['menu-title']}>{t('menu.selectLanguage')}</span>
+                    <span className={styles['menu-title']}>
+                      {t('menu.selectLanguage')}
+                    </span>
                   </motion.div>
 
                   <motion.div
