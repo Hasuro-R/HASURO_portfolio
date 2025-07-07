@@ -24,6 +24,9 @@
         "noExplicitAny": "off",
         "noArrayIndexKey": "warn"
       },
+      "correctness": {
+        "useExhaustiveDependencies": "warn"
+      },
       "a11y": {
         "noStaticElementInteractions": "off",
         "useKeyWithClickEvents": "off"
