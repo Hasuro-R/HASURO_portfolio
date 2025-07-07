@@ -1,24 +1,24 @@
 'use client'
 
 import { AnimatePresence, motion } from 'framer-motion'
-import { useContext, useEffect, useState } from 'react'
-import { usePathname } from 'next/navigation'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { useContext, useEffect, useState } from 'react'
 import {
-  HiMenuAlt3,
-  HiUser,
+  HiArrowLeft,
+  HiChevronRight,
   HiClock,
   HiHome,
-  HiChevronRight,
-  HiArrowLeft,
+  HiMenuAlt3,
+  HiUser,
 } from 'react-icons/hi'
 import { TbWorld } from 'react-icons/tb'
+import { useI18n } from '@/hooks/useI18n'
+import { useLocal } from '@/hooks/useLocal'
 import { colorThemeKey } from '@/lib/key'
 import { ColorThemeContext } from '@/middleware/ColorThemeProvider'
-import { useLocal } from '@/hooks/useLocal'
 import type { LocalType } from '@/types/localType'
 import styles from './HoverMenu.module.scss'
-import { useI18n } from '@/hooks/useI18n'
 
 interface MenuItem {
   label: string
