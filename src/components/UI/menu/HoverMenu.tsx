@@ -272,9 +272,7 @@ export default function HoverMenu() {
                   </motion.div>
                 </>
               ) : (
-                // 言語選択メニュー
                 <>
-                  {/* 戻るボタンとタイトル */}
                   <motion.div
                     className={styles['language-menu-header']}
                     initial={{ opacity: 0, x: -20 }}
@@ -289,10 +287,11 @@ export default function HoverMenu() {
                     >
                       <HiArrowLeft />
                     </button>
-                    <span className={styles['menu-title']}>言語選択</span>
+                    <span className={styles['menu-title']}>
+                      {t('menu.selectLanguage')}
+                    </span>
                   </motion.div>
 
-                  {/* 言語選択項目 */}
                   <motion.div
                     className={`${styles['menu-item-wrapper']} ${local === 'ja' ? styles['language-item-active'] : ''}`}
                     initial={{ opacity: 0, x: -20 }}
