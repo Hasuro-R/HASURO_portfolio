@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { IoIosArrowForward } from 'react-icons/io'
 import topIcon from '@/public/HASURO_portfolio_icon.webp'
-import ColorThemeMenu from '../UI/menu/ColorThemeMenu'
 import styles from './header.module.scss'
 
 export default function SubHeader({ title }: { title: string }) {
@@ -27,7 +26,6 @@ export default function SubHeader({ title }: { title: string }) {
           <p className={styles['top-link']}>{title}</p>
         </div>
       </div>
-      <ColorThemeMenu />
     </div>
   )
 }
