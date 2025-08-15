@@ -46,7 +46,7 @@ export default function TimelineCategory({
           isOpenMenu
             ? {
                 width: '200px',
-                height: '18.75rem',
+                height: '16.75rem',
               }
             : {
                 width: 'auto',
