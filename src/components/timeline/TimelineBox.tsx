@@ -62,7 +62,7 @@ export default function TimelineBox({
 
   const handleBoxClick = () => {
     if (url || feature?.url) {
-      window.open(url || feature?.url, '_blank', 'noopener,noreferrer');
+      window.open(url || feature?.url, '_blank', 'noopener,noreferrer')
     }
   }
 
