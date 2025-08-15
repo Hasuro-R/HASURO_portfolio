@@ -43,6 +43,18 @@
     }
   },
   "timelines": {
+    "goInc": {
+      "title": "GO株式会社",
+      "description": "エンジニアの短期インターン"
+    },
+    "siliconValleyAbroad": {
+      "title": "シリコンバレー留学 🇺🇸",
+      "description": "Jetro主催の起業家等の海外派遣プログラム\nスタンフォードコースに参加"
+    },
+    "catlAward2508": {
+      "title": "CA Tech Lounge Award",
+      "description": "CATechLounge Awardに選ばれました"
+    },
     "reactSlideCraft": {
       "title": "ReactSlideCraft",
       "description": "Reactで簡単にスライドを作れるReactライブラリ"
@@ -85,7 +97,7 @@
       "description": "LINEヤフー株式会社主催のハッカソンに出場\n近未来型鬼ごっこアプリを開発"
     },
     "allesgoodInc": {
-      "title": "株式会社アレスグッド",
+      "title": "株式会社アレスグッド（現 BaseMe）",
       "description": "フロントエンド・バックエンドエンジニアの長期インターン"
     },
     "yumemiInc": {

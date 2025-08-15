@@ -2,6 +2,36 @@ import type { timelineType } from '@/types/timelineType'
 
 export const timelines = <timelineType[]>[
   {
+    id: 33,
+    titleKey: 'timelines.goInc.title',
+    feature: {
+      descriptionKey: 'timelines.goInc.description',
+      techs: ['go'],
+    },
+    url: 'https://goinc.jp',
+    year: '2025',
+    date: 'Sep ~ Oct',
+    kind: 'internship',
+  },
+  {
+    id: 32,
+    titleKey: 'timelines.siliconValleyAbroad.title',
+    feature: {
+      descriptionKey: 'timelines.siliconValleyAbroad.description',
+    },
+    url: 'https://www.jetro.go.jp/services/j-starx/A112.html',
+    year: '2025',
+    date: 'Aug ~ Sep',
+    kind: 'other',
+  },
+  {
+    id: 31,
+    titleKey: 'timelines.catlAward2508.title',
+    year: '2025',
+    date: 'in Aug',
+    kind: 'other',
+  },
+  {
     id: 30,
     titleKey: 'timelines.reactSlideCraft.title',
     feature: {
@@ -16,6 +46,7 @@ export const timelines = <timelineType[]>[
   {
     id: 29,
     titleKey: 'timelines.42tokyo.title',
+    url: 'https://42tokyo.jp/',
     year: '2025',
     date: 'Apr ~',
     kind: 'other',
@@ -28,6 +59,7 @@ export const timelines = <timelineType[]>[
       descriptionKey: 'timelines.noteInc.description',
       techs: ['rails', 'next', 'nuxt', 'svelte'],
     },
+    url: 'https://note.jp/',
     year: '2025',
     date: 'Apr ~',
     kind: 'internship',
@@ -52,6 +84,7 @@ export const timelines = <timelineType[]>[
       descriptionKey: 'timelines.pixivInc.description',
       techs: ['rails', 'react'],
     },
+    url: 'https://www.pixiv.co.jp',
     year: '2025',
     date: 'in Mar',
     kind: 'internship',
@@ -95,6 +128,7 @@ export const timelines = <timelineType[]>[
       descriptionKey: 'timelines.iroriInc.description',
       techs: ['flutter', 'go'],
     },
+    url: 'https://iroriworks.com',
     year: '2024',
     date: 'Jun ~ Jan 2024-25',
     kind: 'internship',
@@ -102,6 +136,7 @@ export const timelines = <timelineType[]>[
   {
     id: 21,
     titleKey: 'timelines.caTechLounge.title',
+    url: 'https://www.cyberagent.co.jp/careers/special/students/tech_lounge',
     year: '2024',
     date: 'Jun ~',
     kind: 'other',
@@ -126,6 +161,7 @@ export const timelines = <timelineType[]>[
       descriptionKey: 'timelines.allesgoodInc.description',
       techs: ['next', 'rails', 'ts'],
     },
+    url: 'https://baseme.co.jp',
     year: '2024',
     date: 'Mar ~ Sep',
     kind: 'internship',
@@ -138,6 +174,7 @@ export const timelines = <timelineType[]>[
       descriptionKey: 'timelines.yumemiInc.description',
       techs: ['DB設計'],
     },
+    url: 'https://www.yumemi.co.jp/',
     year: '2024',
     date: 'Mar 1',
     kind: 'internship',
@@ -174,6 +211,7 @@ export const timelines = <timelineType[]>[
       descriptionKey: 'timelines.rubyProcon.description',
       techs: [],
     },
+    url: 'https://www.ruby-procon.net',
     year: '2023',
     date: 'Dec 9',
     kind: 'award',
@@ -181,6 +219,7 @@ export const timelines = <timelineType[]>[
   {
     id: 14,
     titleKey: 'timelines.appKoshienCygames.title',
+    url: 'https://applikoshien.jp',
     year: '2023',
     date: 'Oct 22',
     kind: 'award',

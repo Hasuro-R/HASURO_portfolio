@@ -6,7 +6,7 @@
     "readMore": "Read More"
   },
   "menu": {
-    "selectLanguage": "Select Language"
+    "selectLanguage": "Language"
   },
   "works": {
     "aniSphere": {
@@ -43,6 +43,18 @@
     }
   },
   "timelines": {
+    "goInc": {
+      "title": "GO Inc.",
+      "description": "Short-term engineering internship"
+    },
+    "siliconValleyAbroad": {
+      "title": "Silicon Valley Study Abroad 🇺🇸",
+      "description": "Overseas dispatch program for entrepreneurs organized by JETRO\nParticipated in Stanford course"
+    },
+    "catlAward2508": {
+      "title": "CA Tech Lounge Award",
+      "description": "Selected for CA Tech Lounge Award"
+    },
     "reactSlideCraft": {
       "title": "ReactSlideCraft",
       "description": "React library for easily creating slides with React"
@@ -85,7 +97,7 @@
       "description": "Participated in LY Corporation's hackathon\nDeveloped a futuristic tag game app"
     },
     "allesgoodInc": {
-      "title": "allesgood Inc.",
+      "title": "allesgood Inc. (now BaseMe)",
       "description": "Long-term frontend & backend engineering internship"
     },
     "yumemiInc": {
