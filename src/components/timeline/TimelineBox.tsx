@@ -18,7 +18,7 @@ export default function TimelineBox({
   end: number
 }) {
   const t = useI18n()
-  const { id, titleKey, date, feature, kind } = timelineData
+  const { id, titleKey, date, feature, url, kind } = timelineData
 
   const [isActiveTimeline, setIsActiveTimeline] = useState(false)
 
@@ -60,8 +60,14 @@ export default function TimelineBox({
     titleText = <p>{title}</p>
   }
 
+  const handleBoxClick = () => {
+    if (url || feature?.url) {
+      window.open(url || feature?.url, '_blank', 'noopener,noreferrer')
+    }
+  }
+
   return (
-    <div className={styles['timeline-box']}>
+    <div className={styles['timeline-box']} onClick={handleBoxClick}>
       <div
         className={styles[isEnd ? 'timeline-right-end' : 'timeline-right']}
         style={{ paddingBottom: isEnd ? '0' : '' }}
@@ -109,7 +115,7 @@ export default function TimelineBox({
                     )
                   })}
               </div>
-              {feature.techs.length !== 0 && (
+              {feature.techs && (
                 <div className={styles['techs-container']}>
                   {feature.techs.map((item, key) => {
                     return (

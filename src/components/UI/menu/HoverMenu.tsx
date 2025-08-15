@@ -164,14 +164,14 @@ export default function HoverMenu() {
       <motion.div
         className={`${styles['menu-cn']} ${isExpanded ? styles.expanded : ''}`}
         initial={{
-          width: 120,
-          height: 40,
-          borderRadius: 20,
+          width: '7.5rem',
+          height: '2.5rem',
+          borderRadius: '1.25rem',
         }}
         animate={{
-          width: isExpanded ? 200 : 120,
-          height: isExpanded ? 192 : 40,
-          borderRadius: isExpanded ? 16 : 20,
+          width: isExpanded ? '12.5rem' : '7.5rem',
+          height: isExpanded ? '12rem' : '2.5rem',
+          borderRadius: isExpanded ? '1rem' : '1.25rem',
         }}
         transition={{
           type: 'tween',
@@ -259,7 +259,7 @@ export default function HoverMenu() {
                         <motion.div
                           className={styles['theme-toggle-button']}
                           animate={{
-                            x: theme === 'dark' ? 20 : 0,
+                            x: theme === 'dark' ? '1.25rem' : 0,
                           }}
                           transition={{
                             type: 'spring',
