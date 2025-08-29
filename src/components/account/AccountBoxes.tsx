@@ -24,7 +24,7 @@ export default function AccountBoxes() {
         </motion.div>
       </a>
       <a
-        href="https://www.linkedin.com/in/hasuro-304183321"
+        href="https://www.linkedin.com/in/hasuro"
         target="_blank"
         rel="noreferrer"
       >
