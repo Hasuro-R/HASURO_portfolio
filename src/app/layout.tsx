@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   twitter: {
-    card: 'summary_large_image',
+    card: 'summary',
     title: {
       default: siteName,
       template: `%s - ${siteName}`,
