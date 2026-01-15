@@ -1,6 +1,6 @@
 {
   "aboutMe": {
-    "profile": "A 19-year-old who loves creating things.\nStarted out with web development using Next.js and Ruby on Rails, and is now participating in a wide range of engineering internships—from web frontend to mobile and backend development.\nWhether it's building apps, filleting fish, or making sweets, I have a wide variety of hobbies.\nMy life motto is: 'Live joyfully!!'"
+    "profile": "A {{age}}-year-old Product Engineer.\nI started as an engineering intern at a startup right after graduating from high school, and since then, I have gained practical experience in companies at various stages, including ventures, listed companies, and unicorns.\nI have extensive practical experience in a wide range of areas such as web front-end, mobile, and server-side development, and I am honing my ability to create products.\nMy life motto is 'Live joyfully.'"
   },
   "button": {
     "readMore": "Read More"
