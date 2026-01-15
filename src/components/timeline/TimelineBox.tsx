@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { type JSX, useState } from 'react'
 import { CgShapeCircle } from 'react-icons/cg'
 import { useI18n } from '@/hooks/useI18n'
 import { returnTech } from '@/lib/work/returnTech'
