@@ -39,7 +39,7 @@ export const works = [
   {
     titleKey: 'works.morihinako.title',
     image: morihinakoImage,
-    url: 'https://mori-hinako.com',
+    url: 'https://hinako-mori-site.vercel.app',
     descriptionKey: 'works.morihinako.description',
     techs: ['next'],
   },

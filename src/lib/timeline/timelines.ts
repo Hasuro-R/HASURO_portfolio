@@ -228,7 +228,7 @@ export const timelines = <timelineType[]>[
     id: 13,
     titleKey: 'timelines.morihinakoSite.title',
     feature: {
-      url: 'https://mori-hinako.com',
+      url: 'https://hinako-mori-site.vercel.app',
       descriptionKey: 'timelines.morihinakoSite.description',
       techs: ['next', 'ts', 'sass'],
     },
