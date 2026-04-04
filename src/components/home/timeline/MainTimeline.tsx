@@ -19,11 +19,14 @@ export default function MainTimeline() {
       return item.kind === 'writing'
     } else if (kind === 'hackathon') {
       return item.kind === 'hackathon'
-    } else if (kind === 'internship') {
-      return item.kind === 'internship'
+    } else if (kind === 'work') {
+      return item.kind === 'work'
     } else if (kind === 'other') {
       return item.kind === 'other'
     }
+  })
+  const timelines2026 = allTimelines.filter((item) => {
+    return item.year === '2026'
   })
   const timelines2025 = allTimelines.filter((item) => {
     return item.year === '2025'
@@ -38,6 +41,7 @@ export default function MainTimeline() {
     return item.year === '2022'
   })
   const timelinesArray = [
+    { item: timelines2026, title: '2026' },
     { item: timelines2025, title: '2025' },
     { item: timelines2024, title: '2024' },
     { item: timelines2023, title: '2023' },

@@ -43,6 +43,14 @@
     }
   },
   "timelines": {
+    "mento": {
+      "title": "株式会社mento",
+      "description": "CTO直下のインターン"
+    },
+    "wotaland": {
+      "title": "Wotaland Inc. 設立",
+      "description": "Co-Founder & CTO"
+    },
     "goInc": {
       "title": "GO株式会社",
       "description": "エンジニアの短期インターン"

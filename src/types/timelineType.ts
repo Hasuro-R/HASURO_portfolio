@@ -1,3 +1,11 @@
+export type timelineKindType =
+  | 'released'
+  | 'award'
+  | 'writing'
+  | 'work'
+  | 'hackathon'
+  | 'other'
+
 type timelineFeatureType = {
   url: string
   descriptionKey: string
@@ -11,5 +19,5 @@ export type timelineType = {
   url?: string
   year: string
   date: string
-  kind: string
+  kind: timelineKindType
 }

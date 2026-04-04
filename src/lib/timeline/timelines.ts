@@ -2,6 +2,28 @@ import type { timelineType } from '@/types/timelineType'
 
 export const timelines = <timelineType[]>[
   {
+    id: 35,
+    titleKey: 'timelines.mento.title',
+    feature: {
+      descriptionKey: 'timelines.mento.description',
+      techs: ['AI', 'Product'],
+    },
+    url: 'https://mento.co.jp',
+    year: '2026',
+    date: 'Apr ~',
+    kind: 'work',
+  },
+  {
+    id: 34,
+    titleKey: 'timelines.wotaland.title',
+    feature: {
+      descriptionKey: 'timelines.wotaland.description',
+    },
+    year: '2025',
+    date: 'Oct 9',
+    kind: 'work',
+  },
+  {
     id: 33,
     titleKey: 'timelines.goInc.title',
     feature: {
@@ -11,7 +33,7 @@ export const timelines = <timelineType[]>[
     url: 'https://goinc.jp',
     year: '2025',
     date: 'Sep ~ Oct',
-    kind: 'internship',
+    kind: 'work',
   },
   {
     id: 32,
@@ -61,8 +83,8 @@ export const timelines = <timelineType[]>[
     },
     url: 'https://note.jp/',
     year: '2025',
-    date: 'Apr ~',
-    kind: 'internship',
+    date: 'Apr ~ Nov',
+    kind: 'work',
   },
   {
     id: 27,
@@ -87,7 +109,7 @@ export const timelines = <timelineType[]>[
     url: 'https://www.pixiv.co.jp',
     year: '2025',
     date: 'in Mar',
-    kind: 'internship',
+    kind: 'work',
   },
   {
     id: 25,
@@ -131,7 +153,7 @@ export const timelines = <timelineType[]>[
     url: 'https://iroriworks.com',
     year: '2024',
     date: 'Jun ~ Jan 2024-25',
-    kind: 'internship',
+    kind: 'work',
   },
   {
     id: 21,
@@ -164,7 +186,7 @@ export const timelines = <timelineType[]>[
     url: 'https://baseme.co.jp',
     year: '2024',
     date: 'Mar ~ Sep',
-    kind: 'internship',
+    kind: 'work',
   },
   {
     id: 18,
@@ -177,7 +199,7 @@ export const timelines = <timelineType[]>[
     url: 'https://www.yumemi.co.jp/',
     year: '2024',
     date: 'Mar 1',
-    kind: 'internship',
+    kind: 'work',
   },
   {
     id: 17,
@@ -351,6 +373,6 @@ export const topTimelines = timelines.filter((timeline) => {
   return (
     timeline.kind === 'released' ||
     timeline.kind === 'award' ||
-    timeline.kind === 'internship'
+    timeline.kind === 'work'
   )
 })
