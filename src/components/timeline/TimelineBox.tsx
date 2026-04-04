@@ -49,7 +49,7 @@ export default function TimelineBox({
         </a>
       </p>
     )
-  } else if (kind === 'internship') {
+  } else if (kind === 'work') {
     icon = '💻'
     titleText = <p>{title}</p>
   } else if (kind === 'hackathon') {

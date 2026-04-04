@@ -43,6 +43,14 @@
     }
   },
   "timelines": {
+    "mento": {
+      "title": "mento Inc.",
+      "description": "Internship reporting directly to the CTO"
+    },
+    "wotaland": {
+      "title": "Founded Wotaland Inc.",
+      "description": "Co-Founder & CTO"
+    },
     "goInc": {
       "title": "GO Inc.",
       "description": "Short-term engineering internship"
