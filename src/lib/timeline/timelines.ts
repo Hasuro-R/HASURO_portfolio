@@ -10,19 +10,19 @@ export const timelines = <timelineType[]>[
     },
     url: 'https://mento.co.jp',
     year: '2026',
-    date: 'Apr ~',
+    date: 'in Apr',
     kind: 'work',
   },
-  {
-    id: 34,
-    titleKey: 'timelines.wotaland.title',
-    feature: {
-      descriptionKey: 'timelines.wotaland.description',
-    },
-    year: '2025',
-    date: 'Oct 9',
-    kind: 'work',
-  },
+  // {
+  //   id: 34,
+  //   titleKey: 'timelines.wotaland.title',
+  //   feature: {
+  //     descriptionKey: 'timelines.wotaland.description',
+  //   },
+  //   year: '2025',
+  //   date: 'Oct 9',
+  //   kind: 'work',
+  // },
   {
     id: 33,
     titleKey: 'timelines.goInc.title',
