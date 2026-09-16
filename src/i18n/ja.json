@@ -43,6 +43,10 @@
     }
   },
   "timelines": {
+    "oneInc": {
+      "title": "株式会社one",
+      "description": "マーケターのインターン"
+    },
     "mento": {
       "title": "株式会社mento",
       "description": "CTO直下のインターン"

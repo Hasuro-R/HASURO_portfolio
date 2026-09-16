@@ -2,6 +2,18 @@ import type { timelineType } from '@/types/timelineType'
 
 export const timelines = <timelineType[]>[
   {
+    id: 36,
+    titleKey: 'timelines.oneInc.title',
+    feature: {
+      descriptionKey: 'timelines.oneInc.description',
+      techs: ['Marketing'],
+    },
+    url: 'https://0x1.company',
+    year: '2026',
+    date: 'Jul ~',
+    kind: 'work',
+  },
+  {
     id: 35,
     titleKey: 'timelines.mento.title',
     feature: {
