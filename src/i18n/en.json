@@ -43,6 +43,10 @@
     }
   },
   "timelines": {
+    "oneInc": {
+      "title": "ONE, Inc.",
+      "description": "Marketing internship"
+    },
     "mento": {
       "title": "mento Inc.",
       "description": "Internship reporting directly to the CTO"
